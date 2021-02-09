@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage applicationcache svg inlinesvg zoom" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#" itemscope="" itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/" data-offline-url="/" data-url="/library/view/fundamentals-of-computer/9781482229417/K22616_C003.xhtml" data-csrf-cookie="csrfsafari" data-highlight-privacy="" data-user-id="4127660" data-user-uuid="b28f9685-65fa-4f95-827a-bc87c37860af" data-username="chenshangwen" data-account-type="Trial" data-activated-trial-date="01/21/2019" data-archive="9781482229417" data-publishers="A K Peters/CRC Press" data-htmlfile-name="K22616_C003.xhtml" data-epub-title="Fundamentals of Computer Graphics, 4th Edition" data-debug="0" data-testing="0" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="Safari Books Online"><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781482229417"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><script type="text/javascript" async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/munchkin.js.download"></script><script src="./References - Fundamentals of Computer Graphics, 4th Edition_files/1732687426968531" async=""></script><script async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/bat.js.download"></script><script type="text/javascript" async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/f.txt"></script><script type="text/javascript" async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/f.txt"></script><script type="text/javascript" async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/linkid.js.download"></script><script async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/gtm.js.download"></script><script async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/analytics.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><link rel="apple-touch-icon" href="https://learning.oreilly.com/static/images/apple-touch-icon.0c29511d2d72.png"><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href="./References - Fundamentals of Computer Graphics, 4th Edition_files/css" rel="stylesheet" type="text/css"><title>References - Fundamentals of Computer Graphics, 4th Edition</title><link rel="stylesheet" href="./References - Fundamentals of Computer Graphics, 4th Edition_files/1282215c62d0.css" type="text/css"><link rel="stylesheet" type="text/css" href="./References - Fundamentals of Computer Graphics, 4th Edition_files/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./References - Fundamentals of Computer Graphics, 4th Edition_files/font-awesome.min.css"><style type="text/css" title="ibis-book">@font-face{font-family:"Helvetica LT Std Black";font-style:normal;font-weight:bold;src:url(../font/HelveticaLTStd-Blk.otf)}@font-face{font-family:"Helvetica LT Std Bold";font-style:normal;font-weight:bold;src:url(../font/HelveticaLTStd-Bold.otf)}@font-face{font-family:"Helvetica LT Std Bold Oblique";font-style:italic;font-weight:bold;src:url(../font/HelveticaLTStd-BoldObl.otf)}@font-face{font-family:"Helvetica LT Std Oblique";font-style:italic;font-weight:normal;src:url(../font/HelveticaLTStd-Obl.otf)}@font-face{font-family:"Helvetica LT Std";font-style:normal;font-weight:normal;src:url(../font/HelveticaLTStd-Roman.otf)}@font-face{font-family:"Myriad Pro";font-style:normal;font-weight:normal;src:url(../font/MyriadPro-Regular.otf)}@font-face{font-family:"STIX General";font-style:normal;font-weight:normal;src:url(../font/STIXGeneral.otf)}@font-face{font-family:"STIX General Bold";font-style:normal;font-weight:bold;src:url(../font/STIXGeneralBol.otf)}@font-face{font-family:"STIX General Bold Italic";font-style:italic;font-weight:bold;src:url(../font/STIXGeneralBolIta.otf)}@font-face{font-family:"STIX General Italic";font-style:italic;font-weight:normal;src:url(../font/STIXGeneralItalic.otf)}@font-face{font-family:"Times LT Std Bold";font-style:normal;font-weight:bold;src:url(../font/TimesLTStd-Bold.otf)}@font-face{font-family:"Times LT Std Bold Italic";font-style:italic;font-weight:bold;src:url(../font/TimesLTStd-BoldItalic.otf)}@font-face{font-family:"Times LT Std Italic";font-style:italic;font-weight:normal;src:url(../font/TimesLTStd-Italic.otf)}@font-face{font-family:"Times LT Std";font-style:normal;font-weight:normal;src:url(../font/TimesLTStd-Roman.otf)}#sbo-rt-content div,#sbo-rt-content div,#sbo-rt-content dl,#sbo-rt-content dt,#sbo-rt-content dd,#sbo-rt-content p,#sbo-rt-content .figcaption{-epub-hyphens:auto;background-color:inherit;border:none;border-width:0;break-after:auto;break-before:auto;break-inside:auto;color:black;display:block;float:none;font-family:"Times LT Std","STIX General","Adobe Caslon Pro",serif;font-size:1em;font-style:normal;font-weight:normal;font-size-adjust:none;font-stretch:normal;hanging-punctuation:none;letter-spacing:0;line-height:1.25em;margin-bottom:0;margin-left:2px;margin-right:2px;margin-top:0;orphans:2;overflow:visible;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;page-break-after:auto;page-break-before:auto;page-break-inside:auto;text-align:justify;text-align-last:left;text-decoration:none;text-shadow:none;text-indent:0;text-justify:distribute;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:normal}#sbo-rt-content blockquote,#sbo-rt-content q{-epub-hyphens:auto;background-color:inherit;border:none;border-width:0;break-after:auto;break-before:auto;break-inside:avoid;color:black;display:block;float:none;font-family:"Adobe Caslon Pro",san-serif;font-size:1em;font-style:normal;font-weight:normal;font-size-adjust:none;font-stretch:normal;hanging-punctuation:none;letter-spacing:0;line-height:1.2em;margin-bottom:0;margin-left:5%;margin-right:5%;margin-top:.75em;orphans:4;overflow:scroll;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;page-break-after:auto;page-break-before:auto;page-break-inside:avoid;text-align:justify;text-align-last:left;text-decoration:none;text-shadow:none;text-indent:0;text-justify:distribute;text-transform:none;vertical-align:baseline;white-space:normal;widows:4;word-spacing:normal}#sbo-rt-content pre{-epub-hyphens:none;background-color:Azure;border:none;border-width:0;break-after:auto;break-before:auto;break-inside:avoid;color:black;display:block;float:none;font-family:"Courier Std","STIX General",monospaced;font-size:.95em;font-style:normal;font-weight:normal;font-size-adjust:.58;font-stretch:normal;hanging-punctuation:none;letter-spacing:0;line-height:1.2em;margin-bottom:.75em;margin-left:2px;margin-right:2px;margin-top:.75em;orphans:6;overflow:scroll;padding-bottom:.25em;padding-left:.25em;padding-right:.25em;padding-top:.45em;page-break-after:avoid;page-break-before:auto;page-break-inside:avoid;text-align:left;text-align-last:left;text-decoration:none;text-shadow:none;text-indent:0;text-justify:inter-word;text-transform:none;vertical-align:baseline;white-space:normal;widows:6;word-spacing:normal}#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5,#sbo-rt-content h6,#sbo-rt-content p.h1Number,#sbo-rt-content .h1Author,#sbo-rt-content .h2Author,#sbo-rt-content .h3Author,#sbo-rt-content .h4Author,#sbo-rt-content .h5Author,#sbo-rt-content .h6Author,#sbo-rt-content .h1sub{-epub-hyphens:none;background-color:inherit;border:none;border-width:0;break-after:avoid;break-before:auto;break-inside:avoid;color:DarkGreen;display:block;float:none;font-family:"Times LT Std","STIX General","Adobe Caslon Pro",serif;font-size:1em;font-style:normal;font-weight:bold;font-size-adjust:none;font-stretch:normal;hanging-punctuation:none;letter-spacing:0;line-height:1.2em;margin-bottom:.1em;margin-left:2px;margin-right:2px;margin-top:1em;orphans:6;overflow:visible;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;page-break-after:avoid;page-break-before:auto;page-break-inside:avoid;text-align:left;text-align-last:left;text-decoration:none;text-shadow:none;text-indent:0;text-justify:inter-word;text-transform:none;vertical-align:baseline;white-space:normal;widows:6;word-break:keep-all;word-spacing:normal}#sbo-rt-content h1{font-size:2em;margin-top:.5em}#sbo-rt-content p.h1sub{font-size:1.75em;font-style:italic}#sbo-rt-content h2{font-size:1.8em}#sbo-rt-content h3{font-size:1.5em}#sbo-rt-content h4{font-size:1.2em}#sbo-rt-content h5{font-size:1em}#sbo-rt-content h6{font-size:1em;font-style:italic}#sbo-rt-content .h1Author{color:black;font-size:1.75em;font-weight:normal;font-style:italic}#sbo-rt-content .h2Author{color:black;font-size:1.4em;font-weight:normal;font-style:italic}#sbo-rt-content .h3Author{color:black;font-size:1.2em;font-weight:normal;font-style:italic}#sbo-rt-content .h4Author{color:black;font-size:1em;font-weight:normal;font-style:italic}#sbo-rt-content .h5Author{color:black;font-size:1em;font-weight:normal;font-style:italic}#sbo-rt-content .h6Author{color:black;font-size:.8em;font-weight:normal;font-style:normal}#sbo-rt-content .h1Affiliation,#sbo-rt-content .h2Affiliation,#sbo-rt-content .h3Affiliation,#sbo-rt-content .h4Affiliation,#sbo-rt-content .h5Affiliation,#sbo-rt-content .h6Affiliation{-epub-hyphens:none;background-color:inherit;border:none;border-width:0;break-after:avoid;break-before:auto;break-inside:avoid;color:black;display:block;float:none;font-family:"Times LT Std","STIX General","Adobe Caslon Pro",serif;font-size:1em;font-style:normal;font-weight:normal;font-size-adjust:none;font-stretch:normal;hanging-punctuation:none;letter-spacing:0;line-height:1.2em;margin-bottom:.5em;margin-left:2px;margin-right:2px;margin-top:0;orphans:6;overflow:visible;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;page-break-after:avoid;page-break-before:auto;page-break-inside:avoid;text-align:left;text-align-last:left;text-decoration:none;text-shadow:none;text-indent:0;text-justify:inter-word;text-transform:none;vertical-align:baseline;white-space:normal;widows:6;word-spacing:normal}#sbo-rt-content .h1Affiliation{color:black;font-size:1.55em}#sbo-rt-content .h2Affiliation{color:black;font-size:1.2em}#sbo-rt-content .h3Affiliation{color:black;font-size:1em}#sbo-rt-content .h4Affiliation{color:black;font-size:.9em}#sbo-rt-content .h5Affiliation{color:black;font-size:.8em}#sbo-rt-content .h6Affiliation{color:black;font-size:.8em}#sbo-rt-content .textAuthor{font-weight:bold;text-align:right}#sbo-rt-content .textAffiliation{font-style:italic;text-align:right;margin-bottom:.5em}#sbo-rt-content Allitross{font-family:monospace;font-size:4em;color:red;background-color:yellow;line-height:8em}#sbo-rt-content q{font-style:italic}#sbo-rt-content p{margin-top:1.2em;text-indent:.75em}#sbo-rt-content table{border-collapse:collapse;margin-bottom:.25em;margin-top:.25em}#sbo-rt-content thead{background-color:#0C6}#sbo-rt-content tr{background-color:inherit;border-bottom:thin dotted lightgrey;border-top:thin dotted lightgrey}#sbo-rt-content td{padding:2px 4px 2px 4px}#sbo-rt-content thead>tr{border:none}#sbo-rt-content thead>tr:last-child{border-bottom:thin solid DarkGreen}#sbo-rt-content img{height:auto;width:75%}#sbo-rt-content div.ArtGroup{border-bottom:thin solid DarkGreen;border-top:thin solid DarkGreen;break-inside:avoid;margin-bottom:.25em;margin-top:.25em;overflow:scroll;page-break-inside:avoid;width:100%}#sbo-rt-content div.Table{overflow:scroll;width:100%}#sbo-rt-content div.Box{border:black solid 2px;margin-bottom:2%;margin-left:3%;margin-right:3%;margin-top:2%;padding-bottom:1%;padding-left:3%;padding-right:3%;padding-top:1%;page-break-inside:avoid}#sbo-rt-content div.Shaded{background-color:silver}#sbo-rt-content .footer{page-break-inside:auto;text-align:center;text-align-last:center;text-decoration:none;text-shadow:none;text-indent:0;text-justify:distribute;text-transform:none;vertical-align:baseline;white-space:normal;widows:6;word-spacing:normal}#sbo-rt-content .Example{font-family:"Helvetica LT Std",sans-serif;margin-left:3%;margin-right:3%;margin-top:1em}#sbo-rt-content h1.Example,#sbo-rt-content h1.Extract,#sbo-rt-content h1.Vignette,#sbo-rt-content h1.Math,#sbo-rt-content h1.Problems,#sbo-rt-content h1.GC1,#sbo-rt-content h1.GC2,#sbo-rt-content h1.GC3,#sbo-rt-content h1.GC4{font-size:1.8em}#sbo-rt-content h2.Example,#sbo-rt-content h2.Extract,#sbo-rt-content h2.Vignette,#sbo-rt-content h2.Math,#sbo-rt-content h2.Problems,#sbo-rt-content h2.GC1,#sbo-rt-content h2.GC2,#sbo-rt-content h2.GC3,#sbo-rt-content h2.GC4{font-size:1.5em}#sbo-rt-content h3.Example,#sbo-rt-content h3.Extract,#sbo-rt-content h3.Vignette,#sbo-rt-content h3.Math,#sbo-rt-content h3.Problems,#sbo-rt-content h3.GC1,#sbo-rt-content h3.GC2,#sbo-rt-content h3.GC3,#sbo-rt-content h3.GC4{font-size:1.2em}#sbo-rt-content h4.Example,#sbo-rt-content h4.Extract,#sbo-rt-content h4.Vignette,#sbo-rt-content h4.Math,#sbo-rt-content h4.Problems,#sbo-rt-content h4.GC1,#sbo-rt-content h4.GC2,#sbo-rt-content h4.GC3,#sbo-rt-content h4.GC4{font-size:1em}#sbo-rt-content .Table{background-color:transparent;font-family:"Helvetica LT Std",sans-serif;font-size:85%}#sbo-rt-content .Extract{font-family:"Helvetica LT Std",sans-serif;font-size:88%;line-height:1em;margin-left:2%;margin-right:2%;margin-top:1em}#sbo-rt-content .Vignette{margin-right:2%;margin-left:2%}#sbo-rt-content .GC1{background-color:powderblue}#sbo-rt-content .GC2{background-color:oldlace}#sbo-rt-content .GC3{background-color:lightgrey}#sbo-rt-content .GC4{background-color:lightblue}#sbo-rt-content .Sidebar{font-size:75%}#sbo-rt-content .BookTitle{-epub-hyphens:none;font-size:2.5em;font-weight:bold;margin-left:10%;margin-right:10%;margin-top:10%;text-align:center}#sbo-rt-content .BookSubTitle{-epub-hyphens:none;font-size:2em;font-style:italic;font-weight:bold;margin-left:10%;margin-right:10%;text-align:center}#sbo-rt-content .BookAuthor{-epub-hyphens:none;font-size:1.5em;font-weight:bold;margin-left:10%;margin-right:10%;margin-top:10%;text-align:center}#sbo-rt-content .BookAuthorAffiliation{-epub-hyphens:none;font-size:1em;font-style:italic;margin-left:10%;margin-right:10%;text-align:center}#sbo-rt-content .BookLogo{margin-top:1em;text-align:center;page-break-after:always}#sbo-rt-content .CIP1{font-family:"Helvetica LT Std",sans-serif;font-size:75%}#sbo-rt-content .CIP2{font-family:"Helvetica LT Std",sans-serif;font-size:75%;margin-top:.75em}#sbo-rt-content .Speaker{margin-top:.75em}#sbo-rt-content .Equation{line-height:3em;text-align:center}#sbo-rt-content .fignumber{display:inline;background-color:darkgreen;color:white;margin:.5em;padding-bottom:.25em;padding-left:.5em;padding-right:.5em;padding-top:.35em;break-after:avoid;font-size:1em;font-weight:bold;page-break-after:avoid;page-break-before:avoid}#sbo-rt-content .figcaption{break-after:avoid;break-before:avoid;font-size:.85em;margin-left:4px;margin-right:4px;page-break-after:avoid;page-break-before:avoid}#sbo-rt-content .figsource{break-before:avoid;font-size:.85em;font-style:italic;margin-left:4px;margin-right:4px;page-break-before:avoid}#sbo-rt-content .ObjectLine{margin-bottom:6px;margin-top:6px;text-align:center}#sbo-rt-content .footnote{font-size:80%;margin-left:1%;margin-right:2%;text-indent:0}#sbo-rt-content .GlossTerm{font-weight:bold;margin-left:1em;margin-top:.5em}#sbo-rt-content .GlossDef{margin-left:1em}#sbo-rt-content .Float{float:right}#sbo-rt-content .Left{float:left}#sbo-rt-content .NoteHead{font-weight:bold}#sbo-rt-content .RF{margin-left:.5em;margin-top:.3em;text-indent:0}#sbo-rt-content .RF1{margin-left:.75em;margin-top:.3em;text-indent:0}#sbo-rt-content .RF2{margin-left:1.25em;margin-top:.3em;text-indent:0}#sbo-rt-content h1+p,#sbo-rt-content h2+p,#sbo-rt-content h3+p,#sbo-rt-content h4+p,#sbo-rt-content h5+p,#sbo-rt-content h6+p,#sbo-rt-content p.Number+p,#sbo-rt-content td>p:first-child{margin-top:0;text-indent:0}#sbo-rt-content .Equation+p{text-indent:0}#sbo-rt-content h1+h1,#sbo-rt-content h1+h3,#sbo-rt-content h1+h4,#sbo-rt-content h1+h5,#sbo-rt-content h1+h6,#sbo-rt-content h2+h2,#sbo-rt-content h2+h4,#sbo-rt-content h2+h5,#sbo-rt-content h2+h6,#sbo-rt-content h3+h3,#sbo-rt-content h3+h5,#sbo-rt-content h3+h6,#sbo-rt-content h4+h4,#sbo-rt-content h4+h6,#sbo-rt-content h5+h5,#sbo-rt-content h6+h6,#sbo-rt-content p.h1sub+p.h1sub,#sbo-rt-content p.Number+p.Number{background-color:Yellow;color:Red;line-height:8em;margin-top:0}#sbo-rt-content h1+p.h1sub,#sbo-rt-content h1+h2,#sbo-rt-content p.h1sub+h2,#sbo-rt-content h2+h3,#sbo-rt-content h3+h4,#sbo-rt-content h4+h5,#sbo-rt-content h5+h6,#sbo-rt-content p+p,#sbo-rt-content blockquote.textAuthor+blockquote.textAffiliation,#sbo-rt-content p.Speaker+p.Speaker{margin-top:0}#sbo-rt-content h1+p.h1Author,#sbo-rt-content h2+p.h2Author,#sbo-rt-content h3+p.h3Author,#sbo-rt-content h4+p.h4Author,#sbo-rt-content h5+p.h5Author,#sbo-rt-content h6+p.h6Author{margin-top:0}#sbo-rt-content p.h1Author+p.h1Affiliation,#sbo-rt-content p.h2Author+p.h2Affiliation,#sbo-rt-content p.h3Author+p.h3Affiliation,#sbo-rt-content p.h4Author+p.h4Affiliation,#sbo-rt-content p.h5Author+p.h5Affiliation,#sbo-rt-content p.h6Author+p.h6Affiliation{color:grey;margin-top:0}#sbo-rt-content p.h1Affiliation+p,#sbo-rt-content p.h2Affiliation+p,#sbo-rt-content p.h3Affiliation+p,#sbo-rt-content p.h4Affiliation+p,#sbo-rt-content p.h5Affiliation+p,#sbo-rt-content p.h6Affiliation+p{margin-top:0;text-indent:0}#sbo-rt-content .Extract+.Extract,#sbo-rt-content .Example+.Example{margin-top:0}#sbo-rt-content .Extract+.Dictionary,#sbo-rt-content .Extract+.Example,#sbo-rt-content .Extract+.GC1,#sbo-rt-content .Extract+.GC2,#sbo-rt-content .Extract+.GC3,#sbo-rt-content .Extract+.GC4,#sbo-rt-content .Extract+.Text,#sbo-rt-content .Extract+.Math,#sbo-rt-content .Extract+.Problem,#sbo-rt-content .Dictionary+.Extract,#sbo-rt-content .Example+.Extract,#sbo-rt-content .GC1+.Extract,#sbo-rt-content .GC2+.Extract,#sbo-rt-content .GC3+.Extract,#sbo-rt-content .GC4+.Extract,#sbo-rt-content .Text+.Extract,#sbo-rt-content .Math+.Extract,#sbo-rt-content .Problem+.Extract{margin-top:1em;text-indent:0}#sbo-rt-content .Example+.Dictionary,#sbo-rt-content .Example+.Extract,#sbo-rt-content .Example+.GC1,#sbo-rt-content .Example+.GC2,#sbo-rt-content .Example+.GC3,#sbo-rt-content .Example+.GC4,#sbo-rt-content .Example+.Text,#sbo-rt-content .Example+.Math,#sbo-rt-content .Example+.Problem,#sbo-rt-content .Dictionary+.Example,#sbo-rt-content .Extract+.Example,#sbo-rt-content .GC1+.Example,#sbo-rt-content .GC2+.Example,#sbo-rt-content .GC3+.Example,#sbo-rt-content .GC4+.Example,#sbo-rt-content .Text+.Example,#sbo-rt-content .Math+.Example,#sbo-rt-content .Problem+.Example{margin-top:1em;text-indent:0}#sbo-rt-content .Dictionary+.Vignette,#sbo-rt-content .Example+.Vignette,#sbo-rt-content .Extract+.Vignette,#sbo-rt-content .GC1+.Vignette,#sbo-rt-content .GC2+.Vignette,#sbo-rt-content .GC3+.Vignette,#sbo-rt-content .GC4+.Vignette,#sbo-rt-content .Text+.Vignette,#sbo-rt-content .Math+.Vignette,#sbo-rt-content .Problem+.Vignette{border-top:black thin solid;margin-top:1em}#sbo-rt-content .Vignette+.Dictionary,#sbo-rt-content .Vignette+.Example,#sbo-rt-content .Vignette+.Extract,#sbo-rt-content .Vignette+.GC1,#sbo-rt-content .Vignette+.GC2,#sbo-rt-content .Vignette+.GC3,#sbo-rt-content .Vignette+.GC4,#sbo-rt-content .Vignette+.Text,#sbo-rt-content .Vignette+.Math,#sbo-rt-content .Vignette+.Problem{border-top:black thin solid;margin-top:1em}#sbo-rt-content span.cBold,#sbo-rt-content span.c75Bold{font-weight:bold}#sbo-rt-content span.cSubscript{font-size:82%;line-height:1em;vertical-align:sub}#sbo-rt-content span.cSuperscript{font-size:82%;line-height:1em;vertical-align:super}#sbo-rt-content span.cBI{font-style:italic;font-weight:bold}#sbo-rt-content span.cAllCaps{text-transform:uppercase}#sbo-rt-content span.cBIsub{font-size:82%;font-style:italic;font-weight:bold;line-height:1em;vertical-align:sub}#sbo-rt-content span.cBIsup{font-size:82%;font-style:italic;font-weight:bold;line-height:1em;vertical-align:super}#sbo-rt-content span.cBoldsub,#sbo-rt-content span.cBsub{font-size:82%;font-weight:bold;line-height:1em;vertical-align:sub}#sbo-rt-content span.cBoldsup,#sbo-rt-content span.cBsup{font-size:82%;font-weight:bold;line-height:1em;vertical-align:super}#sbo-rt-content span.cColor{color:darkblue}#sbo-rt-content span.cMagenta{color:magenta}#sbo-rt-content span.cDSP,#sbo-rt-content span.code{-epub-hyphens:none;background-color:Azure;font-family:"Courier Std","STIX General",monospaced;font-size:.95em;font-style:normal;font-weight:normal;font-size-adjust:.58}#sbo-rt-content span.cIsub{font-size:82%;font-style:italic;line-height:1em;vertical-align:sub}#sbo-rt-content span.cIsup{font-size:82%;font-style:italic;line-height:1em;vertical-align:super}#sbo-rt-content span.cItalic,#sbo-rt-content span.cVariable{font-style:italic}#sbo-rt-content span.cOverbar{border-top:solid 1px}#sbo-rt-content span.cSmCap{font-variant:small-caps}#sbo-rt-content span.cSymGreek,#sbo-rt-content span.cSymMath{font-family:"STIX General",serif}#sbo-rt-content span.cSymGreekBI{font-family:"STIX General",serif;font-style:italic;font-weight:bold}#sbo-rt-content span.cSymGreekBold{font-family:"STIX General",serif;font-weight:bold}#sbo-rt-content span.cSymGreekItalic{font-family:"STIX General",serif;font-style:italic}#sbo-rt-content span.cUnderline{border-bottom:solid 1px}#sbo-rt-content .application{font-size:85%;text-transform:uppercase}#sbo-rt-content .class{color:blue;font-style:italic}#sbo-rt-content .command{color:navy;font-weight:bold}#sbo-rt-content .comment{color:darkgrey}#sbo-rt-content .enumeration{color:purple;font-style:italic}#sbo-rt-content .function{font-style:italic}#sbo-rt-content .keywords{font-weight:bold}#sbo-rt-content .property{color:purple}#sbo-rt-content p.h1Number{border-bottom:1px solid black;color:black;font-size:1.65em;overflow:visible}#sbo-rt-content p.centerHead{font-weight:Bold;text-align:center}#sbo-rt-content p.leftHead{font-weight:Bold;text-align:left}#sbo-rt-content p.rightHead{font-weight:Bold;text-align:right}#sbo-rt-content p.tableTitle{font-size:110%;line-height:110%;font-weight:bold;text-indent:0}#sbo-rt-content p.tableNumber{font-size:110%;line-height:110%;font-weight:bold;text-indent:0}#sbo-rt-content .GlossTerm::after{content:": "}#sbo-rt-content math{font-family:"STIX General",serif}</style><style type="text/css" title="ibis-book"></style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781482229417/chapter/K22616_C003.xhtml",
+          "book_id": "9781482229417",
+          "chapter_uri": "K22616_C003.xhtml",
+          "position": 0,
+          "user_uuid": "b28f9685-65fa-4f95-827a-bc87c37860af",
+          "next_chapter_uri": "/library/view/fundamentals-of-computer/9781482229417/K22616_C004.xhtml"
+        
+      },
+      title: "Fundamentals of Computer Graphics, 4th Edition",
+      author_list: "Peter Shirley, Steve Marschner",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: true,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="./References - Fundamentals of Computer Graphics, 4th Edition_files/modernizr.8e35451ddb64.js.download"></script><script>
+    
+      
+
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_C003.xhtml"><meta name="description" content="Chapter 3 Raster Images Most computer graphics images are presented to the user on some kind of raster display. Raster displays show images as rectangular arrays of pixels. A common ... "><meta property="og:title" content="Chapter 3 Raster Images"><meta itemprop="isPartOf" content="/library/view/fundamentals-of-computer/9781482229417/"><meta itemprop="name" content="Chapter 3 Raster Images"><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_C003.xhtml"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9781482229417/"><meta property="og:description" itemprop="description" content="Chapter 3 Raster Images Most computer graphics images are presented to the user on some kind of raster display. Raster displays show images as rectangular arrays of pixels. A common ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="A K Peters/CRC Press"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9781482229417"><meta property="og:book:author" itemprop="author" content="Peter Shirley"><meta property="og:book:author" itemprop="author" content="Steve Marschner"><meta property="og:book:tag" itemprop="about" content="Digital Media"><meta property="og:book:tag" itemprop="about" content="Engineering"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': 'b28f9685-65fa-4f95-827a-bc87c37860af' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', 'b28f9685-65fa-4f95-827a-bc87c37860af');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/vendor.40e3ab2299ca.js.download"></script><script defer="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/reader.54b3e1936311.js.download"></script><script type="text/javascript" async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/munchkin.js(1).download"></script><script src="./References - Fundamentals of Computer Graphics, 4th Edition_files/f(1).txt"></script><script src="./References - Fundamentals of Computer Graphics, 4th Edition_files/f(2).txt"></script><script async="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/MathJax.js.download"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax_LineBox {display: table!important}
+.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Main-bold; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Main-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Math-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Caligraphic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=2.7.1') format('opentype')}
+</style><style type="text/css">@font-face {font-family: MathJax_AMS; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf?V=2.7.1') format('opentype')}
+</style><style type="text/css">@font-face {font-family: MathJax_Script; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf?V=2.7.1') format('opentype')}
+</style><style type="text/css">@font-face {font-family: MathJax_SansSerif-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf?V=2.7.1') format('opentype')}
+</style></head>
+
+
+<body class="reading sidenav  scalefonts subscribe-panel library nav-collapsed"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="https://learning.oreilly.com/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"></path><rect x="10" y="12" width="3" height="7"></rect><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"></rect><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"></rect></g></svg><span>Safari Home</span></a></li><li><a href="https://learning.oreilly.com/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"></path></g></svg><span>Recommended</span></a></li><li><a href="https://learning.oreilly.com/playlists/" class="t-queue-nav l0 nav-icn None"><!--?xml version="1.0" encoding="UTF-8"?--><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+               Playlists
+            </span></a></li><li class="search"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"></path></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"></path></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="https://learning.oreilly.com/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"></path></g></svg><span>History</span></a></li><li><a href="https://learning.oreilly.com/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"></path></g></svg><span>Topics</span></a></li><li><a href="https://learning.oreilly.com/learning-paths/" class="l1 nav-icn t-learningpaths-nav js-toggle-menu-item"><!--?xml version="1.0" encoding="UTF-8"?--><svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch --><title>Mask</title><desc>Created with Sketch.</desc><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M0,16.0214227 C0,15.0387209 0.796453294,14.2411658 1.77779753,14.2411658 C2.75914177,14.2411658 3.55559506,15.0387209 3.55559506,16.0214227 C3.55559506,17.0041246 2.75914177,17.8016797 1.77779753,17.8016797 C0.796453294,17.8016797 0,17.0041246 0,16.0214227 Z M9.77788642,5.22914885 C8.9280992,5.72049977 7.84008711,5.42853763 7.34941499,4.57757479 C6.85874287,3.72661195 7.15030167,2.63709467 8.00008889,2.14574375 C8.84987611,1.65439282 9.9378882,1.94635496 10.4285603,2.7973178 C10.9192324,3.64828064 10.6276736,4.73779792 9.77788642,5.22914885 Z M4.57213969,7.35869225 C5.42192691,7.85004318 5.71348571,8.93956046 5.22281359,9.79052329 C4.73214147,10.6414861 3.64412938,10.9334483 2.79434216,10.4420974 C1.94455494,9.95074642 1.65299614,8.86122915 2.14366826,8.01026631 C2.63434038,7.15930347 3.72235247,6.86734132 4.57213969,7.35869225 Z M2.79434216,21.6007481 C3.64412938,21.1093972 4.73214147,21.4013594 5.22281359,22.2523222 C5.71348571,23.103285 5.42192691,24.1928023 4.57213969,24.6841532 C3.72235247,25.1755042 2.63434038,24.883542 2.14366826,24.0325792 C1.65299614,23.1816163 1.94455494,22.0920991 2.79434216,21.6007481 Z M7.34941499,27.4652707 C7.84008711,26.6143079 8.9280992,26.3223457 9.77788642,26.8136966 C10.6276736,27.3050476 10.9192324,28.3945649 10.4285603,29.2455277 C9.9378882,30.0964905 8.84987611,30.3884527 8.00008889,29.8971017 C7.15030167,29.4057508 6.85874287,28.3162335 7.34941499,27.4652707 Z M18.7118524,11.3165596 C21.3074367,12.8173162 22.1963355,16.1392758 20.6976522,18.738451 C19.1989689,21.3358459 15.8815987,22.2259744 13.2860143,20.726998 C10.6922077,19.2262414 9.80330893,15.9042818 11.3002144,13.3051066 C12.7988978,10.7059314 16.116268,9.81580294 18.7118524,11.3165596 Z M26.7821642,27.8093944 L30.1315348,31.1633985 C30.3982044,31.4304371 30.2097579,31.8844026 29.8346426,31.8844026 L21.5945511,31.8844026 C21.1287681,31.8844026 20.751875,31.5069881 20.751875,31.0405608 L20.751875,22.7890697 C20.751875,22.4134355 21.2052134,22.2247282 21.4701052,22.4899865 L24.2843587,25.3081333 C26.8337204,23.0240636 28.4444049,19.7092251 28.4444049,16.0223129 C28.4444049,9.15052091 22.8621207,3.56051397 15.9998222,3.56051397 L15.9998222,0 C24.8230314,0 32,7.18689745 32,16.0223129 C32,20.6919269 29.9750886,24.8790914 26.7821642,27.8093944 Z" id="Mask" fill="#8B889A"></path></g></svg><span>Learning Paths</span></a></li><li class="nav-offers flyout-parent"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"></path></g></svg><span>Offers &amp; Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="https://learning.oreilly.com/u/b28f9685-65fa-4f95-827a-bc87c37860af/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"></path></g></svg><span>Highlights</span></a></li><li><a href="https://learning.oreilly.com/u/preferences/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l1 no-icon">Support</a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="https://learning.oreilly.com/u/preferences/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a><span class="l2 t-nag-notification" id="nav-nag"><strong class="trial-green">10</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="https://learning.oreilly.com/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.oreilly.com/online-learning/support/" class="l2">Support</a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Fundamentals of Computer Graphics, 4th Edition
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781482229417/chapter/K22616_C003.xhtml"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"><div data-reactroot="" class="menu-dropdown-wrapper js-menu-dropdown-wrapper align-right"><img class="hidden" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/ajax-transp.gif" alt="loading spinner"><div class="menu-control"><div class="control "><div class="js-playlists-menu"><button class="js-playlist-icon"><svg class="icon-add-to-playlist-sml" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#000000"><g transform="translate(-1.000000, 0.000000)"><rect x="5" y="0" width="12" height="2"></rect><title>Playlists</title><path d="M4.5,14 C6.43299662,14 8,12.4329966 8,10.5 C8,8.56700338 6.43299662,7 4.5,7 C2.56700338,7 1,8.56700338 1,10.5 C1,12.4329966 2.56700338,14 4.5,14 Z M2.5,10 L4,10 L4,8.5 L5,8.5 L5,10 L6.5,10 L6.5,11 L5,11 L5,12.5 L4,12.5 L4,11 L2.5,11 L2.5,10 Z"></path><circle cx="2" cy="5" r="1"></circle><circle cx="1.94117647" cy="1" r="1"></circle><rect x="5" y="4" width="12" height="2"></rect><rect x="9" y="8" width="8" height="2"></rect><rect x="9" y="12" width="8" height="2"></rect></g></g></g></svg><div class="js-playlist-addto-label">Add&nbsp;To</div></button></div></div></div></div></div></div></li><li class="js-font-control-panel font-control-activator"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a class="twitter share-button t-twitter" target="_blank" aria-label="Share this section on Twitter" title="Share this section on Twitter" href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_C003.xhtml&amp;text=Fundamentals%20of%20Computer%20Graphics%2C%204th%20Edition&amp;via=safari"><span>Twitter</span></a></li><li><a class="facebook share-button t-facebook" target="_blank" aria-label="Share this section on Facebook" title="Share this section on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_C003.xhtml"><span>Facebook</span></a></li><li><a class="googleplus share-button t-googleplus" target="_blank" aria-label="Share this secton on Google Plus" title="Share this secton on Google Plus" href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_C003.xhtml"><span>Google Plus</span></a></li><li><a class="email share-button t-email" aria-label="Share this section via email" title="Share this section via email" href="mailto:?subject=Safari:%20Chapter%203%20Raster%20Images&amp;body=https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_C003.xhtml%0D%0Afrom%20Fundamentals%20of%20Computer%20Graphics%2C%204th%20Edition%0D%0A"><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_C026.xhtml" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 26 Visualization</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+  <span class="nav-link"></span>
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="annotator-wrapper"><h1>References</h1>
+<p class="RF"><a id="page_700"></a><a id="page_701"></a>Adelson, E. H. (1999). Lightness Perception and Lightness Illusions. In M. S. Gazzaniga (Ed.), <span class="cItalic">The New Cognitive Neurosciences</span> (Second ed., pp. 339–351). Cambridge, MA: MIT Press.</p>
+<p class="RF">Adzhiev, V., Cartwright, R., Fausett, E., Ossipov, A., Pasko, A., &amp; Savchenko, V. (1999, Sep). Hyperfun Project: A Framework for Collaborative Multidimensional F-rep Modeling. In <span class="cItalic">Implicit Surfaces ’99</span> (pp. 59–69). Aire-la-ville, Switzerland: Eurographics Association.</p>
+<p class="RF">Akenine-Moöller, T., Haines, E., &amp; Hoffman, N. (2008). <span class="cItalic">Real-Time Rendering</span> (Third ed.). Wellesley, MA: A K Peters.</p>
+<p class="RF">Akkouche, S., &amp; Galin, E. (2001). Adaptive Implicit Surface Polygonization Using Marching Triangles. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">20</span>(2), 67–80.</p>
+<p class="RF">Akleman, E., &amp; Chen, J. (1999). Generalized Distance Functions. In <span class="cItalic">Proceedings of the International Conference on Shape Modeling and Applications</span> (pp. 72–79). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Amanatides, J., &amp; Woo, A. (1987). A Fast Voxel Traversal Algorithm for Ray Tracing. In <span class="cItalic">Proceedings of Eurographics</span> (pp. 1–10). Amsterda Elsevier Science Publishers.</p>
+<p class="RF">Amar, R., Eagan, J., &amp; Stasko, J. (2005). Low-Level Components of Analytic Activity in Information Visualization. In <span class="cItalic">Proc. IEEE Symposium on Information Visualization (InfoVis)</span> (pp. 111–117). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">American National Standard Institute. (1986). <span class="cItalic">Nomenclature and Definitions for Illumination Engineering.</span> ANSI Report (New York). (ANSI/IES RP-16-1986)</p>
+<p class="RF">Angel, E. (2002). <span class="cItalic">Interactive Computer Graphics: A Top-Down Approach with OpenGL</span> (Third ed.). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Appel, A. (1968). Some Techniques for Shading Machine Renderings of Solids. In <span class="cItalic">Proceedings of the AFIPS Spring Joint Computing Conference</span> (Vol. 32, pp. 37–45). AFIPS.</p>
+<p class="RF">Arvo, J. (1995). <span class="cItalic">Analytic Methods for Simulated Light Transport</span> (Unpublished doctoral dissertation).</p>
+<p class="RF">Ashdown, I. (1994). <span class="cItalic">Radiosity: A Programmer’s Perspective</span>. New York: John Wiley &amp; Sons.</p>
+<p class="RF">Ashikhmin, M. (2002). A Tone Mapping Algorithm for High Contrast Images. In <span class="cItalic">EGRW ’02: Proceedings of the 13th Eurographics Workshop on Rendering</span> <a id="page_702"></a>(pp. 145-155). Aire-la-Ville, Switzerland: Eurographics Association.</p>
+<p class="RF">Ashikhmin, M., Premože, S., &amp; Shirley, P. (2000). A Microfacet-Based BRDF Generator. In <span class="cItalic">Proceedings of SIGGRAPH</span> (pp. 65-74). Reading, MA: Addison-Wesley Longman.</p>
+<p class="RF">Ashikhmin, M., &amp; Shirley, P. (2000). An Anisotropic Phong BRDF Model. <span class="cItalic">journal of graphics tools, 5</span>(2), 25-32.</p>
+<p class="RF">Baerentzen, J., &amp; Christensen, N. (2002, May). Volume Sculpting Using the Level-Set Method. In <span class="cItalic">SMI ’02: Proceedings of Shape Modeling International 2002 (SMI ’02)</span> (pp. 175-182). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Barr, A. H. (1984). Global and Local Deformations of Solid Primitives. <span class="cItalic">Proc. SIGGRAPH ’84 Computer Graphics, 18(3)</span>, 21-30.</p>
+<p class="RF">Bartels, R. H., Beatty, J. C, &amp; Barsky, B. A. (1987). <span class="cItalic">An Introduction to Splines for Use in Computer Graphics and Geometric Modeling.</span> San Francisco, CA: Morgan Kaufmann.</p>
+<p class="RF">Barthe, L., Dodgson, N. A., Sabin, M. A., Wyvill, B., &amp; Gaildrat, V (2003). Two-dimensional Potential Fields for Advanced Implicit Modeling Operators. <span class="cItalic">Computer Graphics Forum, 22(1)</span>, 23-33.</p>
+<p class="RF">Barthe, L., Mora, B., Dodgson, N. A., &amp; Sabin, M. A. (2002). Interactive Implicit Modelling based on C1 Reconstruction of Regular Grids. <span class="cItalic">International Journal of Shape Modeling, 8(2)</span>, 99-117.</p>
+<p class="RF">Baumgart, B. (1974, October). <span class="cItalic">Geometric Modeling for Computer Vision</span> (Tech. Rep. No. AIM-249). Palo Alto, CA: Stanford University AI Laboratory.</p>
+<p class="RF">Beck, K., &amp; Andres, C. (2004). <span class="cItalic">Extreme Programming Explained: Embrace Change</span> (Second ed.). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Berlin, B., &amp; Kay, P. (1969). <span class="cItalic">Basic Color Terms: Their Universality and Evolution.</span> Berkeley, CA: University of California Press.</p>
+<p class="RF">Berns, R. S. (2000). <span class="cItalic">Billmeyer and Saltzman’s Principles of Color Technology</span> (3<span class="cSuperscript">rd</span> ed.). New York: John Wiley and Sons.</p>
+<p class="RF">Blinn, J. (1982). A Generalization of Algebraic Surface Drawing. <span class="cItalic">ACM Transactions on Graphics, 1</span>(3), 235-258.</p>
+<p class="RF">Blinn, J. (1996). <span class="cItalic">Jim Blinn’s Corner.</span> San Francisco, CA: Morgan Kaufmann.</p>
+<p class="RF">Blinn, J. F (1976). Texture and Reflection in Computer Generated Images. <span class="cItalic">Communications of the ACM, 19</span>(10), 542-547.</p>
+<p class="RF">Bloomenthal, J. (1988). Polygonization of Implicit Surfaces. <span class="cItalic">Computer Aided Geometric Design, 4(5)</span>, 341-355.</p>
+<p class="RF">Bloomenthal, J. (1990). Calculation of Reference Frames Along a Space Curve. In A. Glassner (Ed.), <span class="cItalic">Graphics Gems</span> (pp. 567-571). Boston: Academic Press.</p>
+<p class="RF">Bloomenthal, J. (1995). <span class="cItalic">Skeletal Design of Natural Forms</span> (Unpublished doctoral dissertation). University of Calgary, Canada.</p>
+<p class="RF">Bloomenthal, J. (1997). Bulge Elimination in Convolution Surfaces. <span class="cItalic">Computer Graphics Forum, 16</span>(1), 31–41.</p>
+<p class="RF"><a id="page_703"></a>Bloomenthal, J., &amp; Shoemake, K. (1991). Convolution Surfaces. <span class="cItalic">Proc. SIGGRAPGH ’91, Computer Graphics</span>, <span class="cItalic">25</span>(4), 251–257.</p>
+<p class="RF">Brandenburg, F. J. (1988). Nice Drawing of Graphs are Computationally Hard. In P. Gorney &amp; M. J. Tauber (Eds.), <span class="cItalic">Visualization in Human-Computer Interaction</span> (pp. 1–15). Berlin: Springer-Verlag.</p>
+<p class="RF">Bresenham, J. E. (1965). Algorithm for Computer Control of a Digital Plotter. <span class="cItalic">IBM Systems Journal</span>, <span class="cItalic">4</span>(1), 25–30.</p>
+<p class="RF">Brewer, C. A. (1999). Color Use Guidelines for Data Representation. In <span class="cItalic">Proc. Section on Statistical Graphics</span> (pp. 55–60). Alexandria, VA: American Statistical Association.</p>
+<p class="RF">Buchheim, C., Juönger, M., &amp; Leipert, S. (2002). Improving Walker’s Algorithm to Run in Linear Time. In <span class="cItalic">GD ’02: Revised Papers from the 10th International Symposium on Graph Drawing</span> (pp. 344–353). London: Springer-Verlag .</p>
+<p class="RF">Campagna, S., Kobbelt, L., &amp; Seidel, H.-P. (1998). Directed Edges—A Scalable Representation for Triangle Meshes. <span class="cItalic">journal of graphics tools</span>, <span class="cItalic">3</span>(4), 1–12.</p>
+<p class="RF">Carr, J. C., Beatson, R. K., Cherrie, J. B., Mitchell, T. J., Fright, W. R., McCallum, B. C., &amp; Evans, T. R. (2001). Reconstruction and representation of 3d objects with radial basis functions. In <span class="cItalic">SIGGRAPH ’01: Proceedings of the 28th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 67–76). New York: ACM Press.</p>
+<p class="RF">Chiu, K., Herf, M., Shirley, P., Swamy, S., Wang, C., &amp; Zimmerman, K. (1993). Spatially Nonuniform Scaling Functions for High Contrast Images. In <span class="cItalic">Proceedings of Graphics Interface ’93</span> (pp. 245–253). Wellesley, MA: A K Peters &amp; Canadian Human-Computer Communications Society.</p>
+<p class="RF">Choudhury, P., &amp; Tumblin, J. (2003). The Trilateral Filter for High Contrast Images and Meshes. In <span class="cItalic">EGRW ’03: Proceedings of the 14th Eurographics Workshop on Rendering</span> (pp. 186–196). Aire-la-Ville, Switzerland: Eurographics Association.</p>
+<p class="RF">Cleary, J., Wyvill, B., Birtwistle, G., &amp; Vatti, R. (1983). A Parallel Ray Tracing Computer. In <span class="cItalic">Proceedings of the Association of Simula Users Conference</span> (pp. 77–80).</p>
+<p class="RF">Cohen, E., Riesenfeld, R. F., &amp; Elber, G. (2001). <span class="cItalic">Geometric Modeling with Splines: An Introduction</span>. Wellesley, MA: A K Peters.</p>
+<p class="RF">Cohen, M. F., Chen, S. E., Wallace, J. R., &amp; Greenberg, D. P. (1988). A Progressive Refinement Approach to Fast Radiosity Image Generation. In <span class="cItalic">SIGGRAPH ’88: Proceedings of the 15th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 75–84). New York: ACM Press.</p>
+<p class="RF">Cohen, M. F., &amp; Wallace, J. R. (1993). <span class="cItalic">Radiosity and Realistic Image Synthesis</span>. Cambridge, MA: Academic Press, Inc.</p>
+<p class="RF">Comaniciu, D., &amp; Meer, P. (2002). Mean Shift: A Robust Approach Toward Feature Space Analysis. <span class="cItalic">IEEE Transactions on Pattern Analysis and Machine Intelligence</span>, <span class="cItalic">24</span>(5), 603–619.</p>
+<p class="RF"><a id="page_704"></a>Cook, R. L., Carpenter, L., &amp; Catmull, E. (1987). The Reyes Image Rendering Architecture. <span class="cItalic">Proc. SIGGRAPH ’87 Computer Graphics</span>, <span class="cItalic">21</span>(4), 95–102.</p>
+<p class="RF">Cook, R. L., Porter, T., &amp; Carpenter, L. (1984). Distributed Ray Tracing. <span class="cItalic">Proc. SIGGRAPH ’84, Computer Graphics</span>, <span class="cItalic">18</span>(3), 137–145.</p>
+<p class="RF">Cook, R. L., &amp; Torrance, K. E. (1982). A Reflectance Model for Computer Graphics. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">1</span>(1), 7–24.</p>
+<p class="RF">Crow, F. C. (1978). The Use of Grayscale for Improved Raster Display of Vectors and Characters. In <span class="cItalic">SIGGRAPH ’78: Proceedings of the 5th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 1–5). New York: ACM Press.</p>
+<p class="RF">Crowe, M. J. (1994). <span class="cItalic">A History of Vector Analysis</span>. Mineola, NY: Dover.</p>
+<p class="RF">da Vinci, L. (1970). <span class="cItalic">The Notebooks of Leonardo da Vinci</span> (Vol. 1). Mineola, NY: Dover Press.</p>
+<p class="RF">Dachsbacher, C., Vogelgsang, C., &amp; Stamminger, M. (2003). Sequential Point Trees. <span class="cItalic">ACM Transactions on Graphics, (Proc. SIGGRAPH 03)</span>, <span class="cItalic">22</span>(3), 657– 662.</p>
+<p class="RF">Debevec, P. E., &amp; Malik, J. (1997). Recovering High Dynamic Range Radiance Maps from Photographs. In <span class="cItalic">SIGGRAPH ’97: Proceedings of the 24th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 369–378). Reading, MA: Addison-Wesley.</p>
+<p class="RF">De Boor, C. (1978). <span class="cItalic">A Practical Guide to Splines</span>. Berlin: Springer-Verlag.</p>
+<p class="RF">De Boor, C. (2001). <span class="cItalic">A Practical Guide to Splines</span>. Berlin: Springer-Verlag.</p>
+<p class="RF">deGroot, E., &amp; Wyvill, B. (2005). Rayskip: Faster Ray Tracing of Implicit Surface Animations. In <span class="cItalic">GRAPHITE ’05: Proceedings of the 3rd International Conference on Computer Graphics and Interactive Techniques in Australasia and South East Asia</span> (pp. 31–36). New York: ACM Press.</p>
+<p class="RF">DeRose, T. (1989). <span class="cItalic">A Coordinate-Free Approach to Geometric Programming</span> (Tech. Rep. No. 89-09-16). Seattle, WA: University of Washington.</p>
+<p class="RF">Di Battista, G., Eades, P., Tamassia, R., &amp; Tollis, I. G. (1999). <span class="cItalic">Graph Drawing: Algorithms for the Visualization of Graphs</span>. Englewood Cliffs, NJ: Prentice Hall.</p>
+<p class="RF">Dinh, H., Slabaugh, G., &amp; Turk, G. (2001). Reconstructing Surfaces Using Anisotropic Basis Functions. In <span class="cItalic">International Conference on Computer Vision (ICCV) 2001</span> (pp. 606–613). Washington, DC: IEEE.</p>
+<p class="RF">Dobkin, D. P., &amp; Mitchell, D. P. (1993). Random-Edge Discrepancy of Supersampling Patterns. In <span class="cItalic">Proceedings of Graphics Interface</span> (pp. 62–69). Wellesley, MA: A K Peters &amp; Canadian Human-Computer Communications Society.</p>
+<p class="RF">Dooley, D., &amp; Cohen, M. F. (1990). Automatic Illustration of 3D Geometric Models: Lines. In <span class="cItalic">SI3D ’90: Proceedings of the 1990 Symposium on Interactive 3D Graphics</span> (pp. 77–82). New York: ACM Press.</p>
+<p class="RF">Doran, C., &amp; Lasenby, A. (2003). <span class="cItalic">Geometric Algebra for Physicists</span>. Cambridge, UK: Cambridge University Press.</p>
+<p class="RF"><a id="page_705"></a>Drago, F., Myszkowski, K., Annen, T., &amp; Chiba, N. (2003). Adaptive Logarithmic Mapping for Displaying High Contrast Scenes. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">22</span>(3), 419–426.</p>
+<p class="RF">Duchon, J. (1977). Constructive Theory of Functions of Several Variables. In (pp. 85–100). Berlin: Springer-Verlag.</p>
+<p class="RF">Durand, F., &amp; Dorsey, J. (2002). Fast Bilateral Filtering for the Display of High-Dynamic-Range Images. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">21</span>(3), 257–266.</p>
+<p class="RF">Dutreé, P., Bala, K., &amp; Bekaert, P. (2002). <span class="cItalic">Advanced Global Illumination</span>. Welles-ley, MA: A K Peters.</p>
+<p class="RF">Dwyer, T., Koren, Y., &amp; Marriott, K. (2006). IPSep-CoLa: An Incremental Procedure for Separation Constraint Layout of Graphs. <span class="cItalic">IEEE Trans. Visualization and Computer Graphics (Proc. InfoVis 06)</span>, <span class="cItalic">12</span>(5), 821–828.</p>
+<p class="RF">Eberly, D. (2000). <span class="cItalic">3D Game Engine Design: A Practical Approach to Real-Time Computer Graphics</span>. San Francisco, CA: Morgan Kaufmann.</p>
+<p class="RF">Eckman, P., &amp; Friesen, W. V. (1978). <span class="cItalic">Facial Action Coding System</span>. Palo Alto, CA: Consulting Psychologists Press.</p>
+<p class="RF">Eick, S. G., Steffen, J. L., &amp; Sumner, E. E., Jr. (1992). Seesoft-A Tool for Visualizing Line Oriented Software Statistics. <span class="cItalic">IEEE Trans. Software Eng.</span>, <span class="cItalic">18</span>(11), 957–968.</p>
+<p class="RF">Ershov, S., Kolchin, K., &amp; Myszkowski, K. (2001). Rendering Pearlescent Appearance Based on Paint-Composition Modelling. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">20</span>(3), 227–238.</p>
+<p class="RF">Fairchild, M. D. (2005). <span class="cItalic">Color Appearance Models</span> (Second ed.). New York: John Wiley &amp; Sons.</p>
+<p class="RF">Fairchild, M. D., &amp; Johnson, G. M. (2002). Meet iCA An Image Color Appearance Model. In <span class="cItalic">IS...T/SID 10th Color Imaging Conference</span> (pp. 33–38). Springfield, VA: Society for Imaging Science &amp; Technology.</p>
+<p class="RF">Fairchild, M. D., &amp; Johnson, G. M. (2004). The iCAM Framework for Image Appearance, Image Differences, and Image Quality. <span class="cItalic">Journal of Electronic Imaging</span>, <span class="cItalic">13</span>, 126–138.</p>
+<p class="RF">Farin, G. (2002). <span class="cItalic">Curves and Surfaces for CAGD: A Practical Guide</span>. San Francisco, CA: Morgan Kaufmann.</p>
+<p class="RF">Farin, G., &amp; Hansford, D. (2004). <span class="cItalic">Practical Linear Algebra: A Geometry Toolbox</span>. Wellesley, MA: A K Peters.</p>
+<p class="RF">Farin, G., Hoschek, J., &amp; Kim, M.-S. (Eds.). (2002). <span class="cItalic">Handbook of Computer Aided Geometric Design</span>. Amsterda Elsevier.</p>
+<p class="RF">Fattal, R., Lischinski, D., &amp; Werman, M. (2002). Gradient Domain High Dynamic Range Compression. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">21</span>(3), 249–256.</p>
+<p class="RF">Fekete, J.-D., &amp; Plaisant, C. (2002). Interactive Information Visualization of a Million Items. In <span class="cItalic">Proc. IEEE Symposium on Information Visualization (InfoVis 02)</span> (pp. 117–124). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Ferwerda, J. A., Pattanaik, S., Shirley, P., &amp; Greenberg, D. P. (1996). A Model of Visual Adaptation for Realistic Image Synthesis. In <span class="cItalic">SIGGRAPH ’96</span>: <a id="page_706"></a><span class="cItalic">Proceedings of the 23rd Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 249–258). New York: ACM Press.</p>
+<p class="RF">Ferwerda, J. A., Shirley, P., Pattanaik, S. N., &amp; Greenberg, D. P. (1997). A Model of Visual Masking for Computer Graphics. In <span class="cItalic">SIGGRAPH ’97: Proceedings of the 24th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 143–152). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Foley, J. D., Van Dam, A., Feiner, S. K., &amp; Hughes, J. F. (1990). <span class="cItalic">Computer Graphics: Principles and Practice</span> (Second ed.). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Forsyth, D. A., &amp; Ponce, J. (2002). <span class="cItalic">Computer Vision: A Modern Approach</span>. Englewoods Cliffs, NJ: Prentice Hall.</p>
+<p class="RF">Francis S. Hill, J. (2000). <span class="cItalic">Computer Graphics Using OpenGL</span> (Second ed.). Englewood Cliffs, NJ: Prentice Hall.</p>
+<p class="RF">Frick, A., Ludwig, A., &amp; Mehldau, H. (1994). A Fast Adaptive Layout Algorithm for Undirected Graphs. In <span class="cItalic">GD ’94: Proceedings of the DIMACS International Workshop on Graph Drawing</span> (pp. 388–403). London: Springer-Verlag .</p>
+<p class="RF">Friendly, M. (2008). A Brief History of Data Visualization. In <span class="cItalic">Handbook of Data Visualization</span> (pp. 15–56). (Web document, <a href="http://www.math.yorku.ca/">http://www.math.yorku.ca/SCS/Gallery/milestone/</a>.)</p>
+<p class="RF">Frisken, S., Perry, R., Rockwood, A., &amp; Jones, T. (2000). Adaptively Sampled Distance Fields. In <span class="cItalic">Siggraph ’00: Proceedings of the 27th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 249–254). New York: ACM Press/Addison-Wesley Publishing Co.</p>
+<p class="RF">Fua, Y.-H., Ward, M. O., &amp; Rundensteiner, E. A. (1999). Hierarchical Parallel Coordinates for Exploration of Large Datasets. In <span class="cItalic">Proc. IEEE Visualization Conference (Vis ’99)</span> (pp. 43–50). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Fujimoto, A., Tanaka, T., &amp; Iwata, K. (1986). ARTSccelerated Ray-Tracing System. <span class="cItalic">IEEE Computer Graphics &amp; Applications</span>, <span class="cItalic">6</span>(4), 16–26.</p>
+<p class="RF">Galin, E., &amp; Akkouche, S. (1999). Incremental Polygonization of Implicit Surfaces. <span class="cItalic">Graphical Models</span>, <span class="cItalic">62</span>(1), 19–39.</p>
+<p class="RF">Gansner, E. R., Koutsofois, E., North, S. C., &amp; Vo, K.-P. (1993, March). A Technique for Drawing Directed Graphs. <span class="cItalic">IEEE Transactions on Software Engineering</span>, <span class="cItalic">19</span>(3), 214–229.</p>
+<p class="RF">Gascuel, M.-P. (1993, Aug). An Implicit Formulation for Precise Contact Modeling Between Flexible Solids. In <span class="cItalic">SIGGRAPH ’93: Proceedings of the 20th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 313–320). New York: ACM Press.</p>
+<p class="RF">Gibson, J. J. (1950). <span class="cItalic">The Perception of the Visual World</span>. Cambridge, MA: Riverside Press.</p>
+<p class="RF">Gilchrist, A. L., Kossyfidis, C., Bonato, F., Agostini, T., Cataliotti, J., Li, X., . . . Economou, E. (1999). An Anchoring Theory of Lightness Perception. <a id="page_707"></a><span class="cItalic">Psychological Review</span>, <span class="cItalic">106</span>(4), 795–834.</p>
+<p class="RF">Glassner, A. (1984). Space Subdivision for Fast Ray Tracing. <span class="cItalic">IEEE Computer Graphics &amp; Applications</span>, <span class="cItalic">4</span>(10), 15–22.</p>
+<p class="RF">Glassner, A. (1988). Spacetime Ray Tracing for Animation. <span class="cItalic">IEEE Computer Graphics &amp; Applications</span>, <span class="cItalic">8</span>(2), 60–70.</p>
+<p class="RF">Glassner, A. (Ed.). (1989). <span class="cItalic">An Introduction to Ray Tracing</span>. London: Academic Press.</p>
+<p class="RF">Glassner, A. (1995). <span class="cItalic">Principles of Digital Image Synthesis</span>. San Francisco, CA: Morgan Kaufmann.</p>
+<p class="RF">Goldman, R. (1985). Illicit Expressions in Vector Algebra. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">4</span>(3), 223–243.</p>
+<p class="RF">Goldsmith, J., &amp; Salmon, J. (1987). Automatic Creation of Object Hierarchies for Ray Tracing. <span class="cItalic">IEEE Computer Graphics &amp; Applications</span>, <span class="cItalic">7</span>(5), 14–20.</p>
+<p class="RF">Gooch, A., Gooch, B., Shirley, P., &amp; Cohen, E. (1998). A Non-Photorealistic Lighting Model for Automatic Technical Illustration. In <span class="cItalic">SIGGRAPH ’98: Proceedings of the 25th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 447–452). New York: ACM Press.</p>
+<p class="RF">Goral, C. M., Torrance, K. E., Greenberg, D. P., &amp; Battaile, B. (1984). Modeling the Interaction of Light between Diffuse Surfaces. <span class="cItalic">Proc. SIGGRAPH ’84, Computer Graphics</span>, <span class="cItalic">18</span>(3), 213–222.</p>
+<p class="RF">Gouraud, H. (1971). Continuous Shading of Curved Surfaces. <span class="cItalic">Communications of the ACM</span>, <span class="cItalic">18</span>(6), 623–629.</p>
+<p class="RF">Grassmann, H. (1853). Zur Theorie der Farbenmischung. <span class="cItalic">Annalen der Physik und Chemie</span>, <span class="cItalic">89</span>, 69–84.</p>
+<p class="RF">Gregory, R. L. (1997). <span class="cItalic">Eye and Brain: The Psychology of Seeing</span> (Fifth ed.). Princeton, NJ: Princeton University Press.</p>
+<p class="RF">Grosjean, J., Plaisant, C., &amp; Bederson, B. (2002). SpaceTree: Supporting Exploration in Large Node Link Tree, Design Evolution and Empirical Evaluation. In <span class="cItalic">Proc. IEEE Symposium on Information Visualization (InfoVis)</span> (pp. 57–64). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Grossman, T., Wigdor, D., &amp; Balakrishnan, R. (2007). Exploring and Reducing the Effects of Orientation on Text Readability in Volumetric Displays. In <span class="cItalic">Proc. ACM Conf. Human Factors in Computing Systems (CHI)</span> (pp. 483– 492). New York: ACM Press.</p>
+<p class="RF">Hammersley, J., &amp; Handscomb, D. (1964). <span class="cItalic">Monte-Carlo Methods</span>. London: Methuen.</p>
+<p class="RF">Hanrahan, P., &amp; Lawson, J. (1990). A Language for Shading and Lighting Calculations. In <span class="cItalic">SIGGRAPH ’90: Proceedings of the 17th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 289–298). New York: ACM Press.</p>
+<p class="RF">Hanson, A. J. (2005). <span class="cItalic">Visualizing Quaternions</span>. San Francisco, CA: Morgan Kaufmann.</p>
+<p class="RF"><a id="page_708"></a>Harris, M. J. (2004). Fast Fluid Dynamics Simulation on the GPU. In <span class="cItalic">GPU Gems: Programming Techniques, Tips, and Tricks for Real-Time Graphics</span> (chap. 38). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Hart, J. C., &amp; Baker, B. (1996, Oct). Implicit Modeling of Tree Surfaces. In <span class="cItalic">Proceedings of Implicit Surfaces ’96</span> (pp. 143–152). Aire-la-Ville, Switzerland: Eurographics Association.</p>
+<p class="RF">Hartmann, E. (1998). A Marching Method for the Triangulation of Surfaces. <span class="cItalic">The Visual Computer</span>, <span class="cItalic">14</span>(3), 95–108.</p>
+<p class="RF">Hausner, M. (1998). <span class="cItalic">A Vector Space Approach to Geometry</span>. Mineola, NY: Dover.</p>
+<p class="RF">Havran, V. (2000). <span class="cItalic">Heuristic Ray Shooting Algorithms</span> (Unpublished doctoral dissertation). Czech Technical University in Prague.</p>
+<p class="RF">He, X. D., Heynen, P. O., Phillips, R. L., Torrance, K. E., Salesin, D. H., &amp; Greenberg, D. P. (1992). A Fast and Accurate Light Reflection Model. <span class="cItalic">Proc. SIGGRAPH ’92, Computer Graphics</span>, <span class="cItalic">26</span>(2), 253–254.</p>
+<p class="RF">Hearn, D., &amp; Baker, M. P. (1986). <span class="cItalic">Computer Graphics</span>. Englewood Cliffs, N.J.: Prentice Hall.</p>
+<p class="RF">Heer, J., &amp; Robertson, G. (2007). Animated Transitions in Statistical Data Graphics. <span class="cItalic">IEEE Trans. on Visualization and Computer Graphics (Proc. Info-Vis07)</span>, <span class="cItalic">13</span>(6), 1240–1247.</p>
+<p class="RF">Heidrich, W., &amp; Seidel, H.-P. (1998). Ray-Tracing Procedural Displacement Shaders. In <span class="cItalic">Proceedings of Graphics Interface</span> (pp. 8–16). Wellesley, MA: A K Peters &amp; Canadian Human-Computer Communications Society.</p>
+<p class="RF">Henry, N., &amp; Fekete, J.-D. (2006). MatrixExplorer: a Dual-Representation System to Explore Social Networks. <span class="cItalic">IEEE Trans. Visualization and Computer Graphics (Proc. InfoVis 06)</span>, <span class="cItalic">12</span>(5), 677–684.</p>
+<p class="RF">Hoffmann, B. (1975). <span class="cItalic">About Vectors</span>. Mineola, NY: Dover.</p>
+<p class="RF">Hofstadter, D. (1979). <span class="cItalic">G oödel, Escher, Bach: an Eternal Golden Braid</span>. New York: Basic Books.</p>
+<p class="RF">Hood, D. C., Finkelstein, M. A., &amp; Buckingham, E. (1979). Psychophysical Tests of Models of the Response Function. <span class="cItalic">Vision Research</span>, <span class="cItalic">19</span>, 401–406.</p>
+<p class="RF">Hoppe, H. (1994). <span class="cItalic">Surface Reconstruction from Unorganized Points</span> (Unpublished doctoral dissertation). University of Washington.</p>
+<p class="RF">Horn, B. K. P. (1974). Determining Lightness from an Image. <span class="cItalic">CVGIP</span>, <span class="cItalic">3</span>, 277– 299.</p>
+<p class="RF">Hughes, J. F., &amp; Moöller, T. (1999). Building an Orthonormal Basis from a Unit Vector. <span class="cItalic">journal of graphics tools</span>, <span class="cItalic">4</span>(4), 33–35.</p>
+<p class="RF">Hunt, R. W. G. (2004). <span class="cItalic">The Reproduction of Color</span> (6th ed.). Chichester, UK: John Wiley and Sons.</p>
+<p class="RF">IEEE Standards Association. (1985). <span class="cItalic">IEEE Standard for Binary Floating-Point Arithmetic</span> (Tech. Rep.). New York: IEEE Report. (ANSI/IEEE Std 754-1985)</p>
+<p class="RF"><a id="page_709"></a>Igarashi, T., Matsuoka, S., &amp; Tanaka, H. (1999). Teddy: A Sketching Interface for 3D Freeform Design. In <span class="cItalic">Siggraph ’99: Proceedings of the 26th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 409– 416). New York: ACM Press/Addison-Wesley Publishing Co.</p>
+<p class="RF">Immel, D. S., Cohen, M. F., &amp; Greenberg, D. P. (1986). A Radiosity Method for Non-Diffuse Environments. <span class="cItalic">Proc. SIGGRAPH ’86, Computer Graphics</span>, <span class="cItalic">20</span>(4), 133–142.</p>
+<p class="RF">Ingram, S., Munzner, T., &amp; Olano, M. (2009). Glimmer: Multilevel MDS on the GPU. <span class="cItalic">IEEE Trans. Visualization and Computer Graphics</span>, <span class="cItalic">15</span>(2), 249–261.</p>
+<p class="RF">Inselberg, A., &amp; Dimsdale, B. (1990). Parallel Coordinates: A Tool for Visualizing Multi-Dimensional Geometry. In <span class="cItalic">Vis ’90: Proceedings of the 1st Conference on Visualization ’90.</span> Los Alamitos, CA: IEEE Computer Society Press.</p>
+<p class="RF">Jansen, F. W. (1986). Data Structures for Ray Tracing. In <span class="cItalic">Proceedings of a Workshop Eurographics Seminars on Data Structures for Raster Graphics</span> (pp. 57–73). New York: Springer-Verlag.</p>
+<p class="RF">Jensen, H. W. (2001). <span class="cItalic">Realistic Image Synthesis Using Photon Mapping</span>. Welles-ley, MA: A K Peters.</p>
+<p class="RF">Johansson, G. (1973). Visual Perception of Biological Motion and a Model for Its Analysis. <span class="cItalic">Perception &amp; Psychophysics</span>, <span class="cItalic">14</span>, 201–211.</p>
+<p class="RF">Johnson, B., &amp; Shneiderman, B. (1991). Treemaps: A Space-filling Approach to the Visualization of Hierarchical Information. In <span class="cItalic">VIS ’91: Proceedings of the 2nd Conference on Visualization ’91</span> (pp. 284–291). Los Alamitos, CA: IEEE Computer Society Press.</p>
+<p class="RF">Johnson, G. M., &amp; Fairchild, M. D. (2003). Rendering HDR Images. In <span class="cItalic">IS...T/SID 11th Color Imaging Conference</span> (pp. 36–41). Springfield, VA: Society for Imaging Science &amp; Technology.</p>
+<p class="RF">Jones, J. A., Harrold, M. J., &amp; Stasko, J. (2002). Visualization of Test Information to Assist Fault Localization. In <span class="cItalic">ICSE ’02: Proceedings of the 24th International Conference on Software Engineering</span> (pp. 467–477). New York: ACM Press.</p>
+<p class="RF">Judd, D. B. (1932). Chromaticity Sensibility to Stimulus Differences. <span class="cItalic">Journal of the Optical Society of America</span>, <span class="cItalic">22</span>, 72–108.</p>
+<p class="RF">Kainz, F., Bogart, R., &amp; Hess, D. (2003). The OpenEXR Image File Format. In <span class="cItalic">SIGGRAPH Technical Sketches.</span> New York: ACM Press. (see also: <a href="http://www.openexr.com/">http://www.openexr.com/</a>)</p>
+<p class="RF">Kajiya, J. T. (1986). The Rendering Equation. <span class="cItalic">Proc SIGGRAPH ’86 Computer Graphics</span>, <span class="cItalic">20</span>(4), 143–150.</p>
+<p class="RF">Kalos, M., &amp; Whitlock, P. (1986). <span class="cItalic">Monte Carlo Methods, Basics</span>. New York: Wiley-Interscience.</p>
+<p class="RF">Kalra, D., &amp; Barr, A. (1989, July). Guaranteed Ray Intersections with Implicit Functions. <span class="cItalic">Computer Graphics (Proc. SIGGRAPH 89)</span>, <span class="cItalic">23</span>(3), 297–306.</p>
+<p class="RF"><a id="page_710"></a>Kay, D. S., &amp; Greenberg, D. (1979). Transparency for Computer Synthesized Images. <span class="cItalic">Proc. SIGGRAPH ’79 Computer Graphics</span>, <span class="cItalic">13</span>(2), 158–164.</p>
+<p class="RF">Kernighan, B. W., &amp; Pike, R. (1999). <span class="cItalic">The Practice of Programming</span>. Reading, MA: Addison-Wesley.</p>
+<p class="RF">Kersten, D., Mamassian, P., &amp; Knill, D. C. (1997). Moving Cast Shadows Induce Apparent Motion in Depth. <span class="cItalic">Perception</span>, <span class="cItalic">26</span>(2), 171–192.</p>
+<p class="RF">Kindlmann, G., Weinstein, D., &amp; Hart, D. (2000). Strategies for Direct Volume Rendering of Diffusion Tensor Fields. <span class="cItalic">IEEE Transactions on Visualization and Computer Graphics</span>, <span class="cItalic">6</span>(2), 124–138.</p>
+<p class="RF">Kirk, D., &amp; Arvo, J. (1988). The Ray Tracing Kernel. In <span class="cItalic">Proceedings of Ausgraph.</span> Melbourne, Australia: Australian Computer Graphics Association.</p>
+<p class="RF">Klatzky, R. L. (1998). Allocentric and Egocentric Spatial Representations: Definitions, Distinctions, and Interconnections. In C. Freksa, C. Habel, &amp; K. F. Wender (Eds.), <span class="cItalic">Spatial Cognition—An Interdisciplinary Approach to Representation and Processing of Spatial Knowledge</span> (Vol. 5, pp. 1–17). Berlin: Springer-Verlag.</p>
+<p class="RF">Knill, D. C. (1998). Surface Orientation From Texture: Ideal Observers, Generic Observers and the Information Content of Texture Cues. <span class="cItalic">Vision Research</span>, <span class="cItalic">38</span>, 1655–1682.</p>
+<p class="RF">Kollig, T., &amp; Keller, A. (2002). Efficient Multidimensional Sampling. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">21</span>(3), 557–564.</p>
+<p class="RF">Kovitz, B. L. (1999). <span class="cItalic">Practical Sofware Requirements: A Manual of Content &amp; Style</span>. New York: Manning.</p>
+<p class="RF">Lafortune, E. P. F., Foo, S.-C., Torrance, K. E., &amp; Greenberg, D. P. (1997). Non-Linear Approximation of Reflectance Functions. In <span class="cItalic">Proceedings of SIGGRAPH ’97</span> (pp. 117–126). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Laramee, R. S., Hauser, H., Doleisch, H., Vrolijk, B., Post, F. H., &amp; Weiskopf, D. (2004). The State of the Art in Flow Visualization: Dense and Texture-Based Techniques. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">23</span>(2), 203–221.</p>
+<p class="RF">Lasseter, J. (1987). Principles of Traditional Animation Applied to 3D Computer Animation. <span class="cItalic">Proc. SIGGRAPH ’87, Computer Graphics</span>, <span class="cItalic">21</span>(4), 35–44.</p>
+<p class="RF">Lawrence, J., Rusinkiewicz, S., &amp; Ramamoorthi, R. (2004). Efficient BRDF Importance Sampling Using a Factored Representation. <span class="cItalic">ACM Transactions on Graphics (Proc. SIGGRAPH ’04)</span>, <span class="cItalic">23</span>(3), 496–505.</p>
+<p class="RF">Lee, D. N., &amp; Reddish, P. (1981). Plummeting Gannets: A Paradigm of Ecological Optics. <span class="cItalic">Nature</span>, <span class="cItalic">293</span>, 293–294.</p>
+<p class="RF">Leung, T., &amp; Malik, J. (1997). On Perpendicular Texture: Why Do We See More Flowers in the Distance? In <span class="cItalic">Proc. IEEE Conference on Computer Vision and Pattern Recognition</span> (pp. 807–813). Los Alamitos, CA: IEEE Press.</p>
+<p class="RF">Lewis, C., &amp; Rieman, J. (1993). <span class="cItalic">Task-Centered User Interface Design: A Practical Introduction.</span> <a href="http://hcibib.org/">http://hcibib.org/tcuid/</a>.</p>
+<p class="RF">Lewis, R. R. (1994). Making Shaders More Physically Plausible. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">13</span>(2), 109–120.</p>
+<p class="RF"><a id="page_711"></a>loop, C. (2000). <span class="cItalic">Managing Adjacency in Triangular Meshes</span> (Tech. Rep. No. MSR-TR-2000-24). Bellingham, WA: Microsoft Research.</p>
+<p class="RF">Lorensen, W., &amp; Cline, H. (1987). Marching Cubes: A High Resolution 3D Surface Construction Algorithm. <span class="cItalic">Computer Graphics (Proc. SIGGRAPH 87)</span>, <span class="cItalic">21</span>(4), 163–169.</p>
+<p class="RF">Luboschik, M., Schumann, H., &amp; Cords, H. (2008). Particle-Based Labeling: Fast Point-Feature Labeling without Obscuring Other Visual Features. <span class="cItalic">IEEE Trans. on Visualization and Computer Graphics (Proc. InfoVis08)</span>, <span class="cItalic">14</span>(6), 1237–1244.</p>
+<p class="RF">MacEachren, A., Dai, X., Hardisty, F., Guo, D., &amp; Lengerich, G. (2003). Exploring High-D Spaces with Multiform Matrices and Small Multiples. In <span class="cItalic">Proc. IEEE Symposium on Information Visualization (InfoVis)</span> (pp. 31–38). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Mackinlay, J. (1986). Automating the Design of Graphical Presentations of Relational Information. <span class="cItalic">ACM Trans. on Graphics (TOG)</span>, <span class="cItalic">5</span>(2), 110–141.</p>
+<p class="RF">Malley, T. (1988). <span class="cItalic">A Shading Method for Computer Generated Images</span> (Unpublished master’s thesis). Computer Science Department, University of Utah.</p>
+<p class="RF">Marschner, S. R., &amp; Lobb, R. J. (1994, Oct). An Evaluation of Reconstruction Filters for Volume Rendering. In <span class="cItalic">VIS ’94: Proceedings of the Conference on Visualization ’94</span> (pp. 100–107). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Marshall, J. A., Burbeck, C. A., Arely, D., Rolland, J. P., &amp; Martin, K. E. (1999). Occlusion Edge Blur: A Cue to Relative Visual Depth. <span class="cItalic">Journal of the Optical Society of America A</span>, <span class="cItalic">13</span>, 681–688.</p>
+<p class="RF">Matusik, W., Pfister, H., Brand, M., &amp; McMillan, L. (2003). A Data-Driven Reflectance Model. <span class="cItalic">ACM Transactions on Graphics (Proc. SIGGRAPH ’03)</span>, <span class="cItalic">22</span>(3), 759–769.</p>
+<p class="RF">McLouglin, T., Laramee, R. S., Peikert, R., Post, F. H., &amp; Chen, M. (2009). Over Two Decades of Integration-Based Geometric Flow Visualization. In <span class="cItalic">Proc. Eurographics 2009, State of the Art Reports.</span> Aire-la-Ville, Switzerland: Eurographics Association.</p>
+<p class="RF">Meyers, S. (1995). <span class="cItalic">More Effective C++: 35 New Ways to Improve Your Programs and Designs</span>. Reading, MA: Addison-Wesley.</p>
+<p class="RF">Meyers, S. (1997). <span class="cItalic">Effective C++: 50 Specific Ways to Improve Your Programs and Designs</span> (Second ed.). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Mitchell, D. P. (1990, May). Robust Ray Intersection with Interval Arithmetic. In <span class="cItalic">Graphics interface ’90</span> (pp. 68–74). Wellesley, MA: Canadian Human-Computer Communications Society &amp; A K Peters.</p>
+<p class="RF">Mitchell, D. P. (1996). Consequences of Stratified Sampling in Graphics. In <span class="cItalic">SIGGRAPH ’96: Proceedings of the 23rd Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 277–280). New York: ACM Press.</p>
+<p class="RF"><a id="page_712"></a>Mitchell, D. P., &amp; Netravali, A. N. (1988). Reconstruction Filters in Computer Graphics. <span class="cItalic">Computer Graphics</span>, <span class="cItalic">22</span>(4), 221–228.</p>
+<p class="RF">Morse, B., Yoo, T., Rheingans, P., Chen, D., &amp; Subramanian, K. (2001). Interpolating Implicit Surfaces from Scattered Surface Data Using Compactly Supported Radial Basis Functions. In <span class="cItalic">Proceedings of Shape Modeling International</span> (pp. 89–98). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Mortenson, M. (1985). <span class="cItalic">Geometric Modeling</span>. New York: John Wiley &amp; Sons.</p>
+<p class="RF">Munkres, J. (2000). <span class="cItalic">Topology</span> (Second ed.). Englewood Cliffs, NJ: Prentice Hall.</p>
+<p class="RF">Munzner, T. (2000). <span class="cItalic">Interactive Visualization of Large Graphs and Networks</span> (Unpublished doctoral dissertation). Stanford University Department of Computer Science.</p>
+<p class="RF">Munzner, T., Guimbretie`re, F., Tasiran, S., Zhang, L., &amp; Zhou, Y. (2003). Tree-Juxtaposer: Scalable Tree Comparison Using Focus+Context with Guaranteed Visibility. <span class="cItalic">ACM Transactions on Graphics (Proc. SIGGRAPH ’03)</span>, <span class="cItalic">22</span>(3), 453–462.</p>
+<p class="RF">Museth, K., Breen, D., Whitaker, R., &amp; Barr, A. (2002). Level Set Surface Editing Operators. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">21</span>(3), 330–338.</p>
+<p class="RF">Muuss, M. J. (1995). Towards Real-Time Ray-Tracing of Combinatorial Solid Geometric Models. In <span class="cItalic">Proceedings of BRL-CAD Symposium.</span></p>
+<p class="RF">Nicodemus, F. E., Richmond, J. C., Hsia, J. J., Ginsberg, I., &amp; Limperis, T. (1977). <span class="cItalic">Geometrical Considerations and Nomenclature for Reflectance</span> (Tech. Rep. No. 160). Washington, D.C.: National Bureau of Standards.</p>
+<p class="RF">Nishimura, H., Hirai, A., Kawai, T., Kawata, T., Shirikawa, I., &amp; Omura, K. (1985). Object Modeling by Distribution Function and a Method of Image Generation. In <span class="cItalic">J. Electronics Comm. Conf. ’85</span> (Vol. J69-D, pp. 718–725).</p>
+<p class="RF">Ohtake, Y., Belyaev, A., &amp; Pasko, A. (2003). Dynamic Mesh Optimization for Polygonized Implicit Surfaces with Sharp Features. <span class="cItalic">The Visual Computer</span>, <span class="cItalic">19</span>(2), 115–126.</p>
+<p class="RF">Oppenheim, A. V., Schafer, R., &amp; Stockham, T. (1968). Nonlinear Filtering of Multiplied and Convolved Signals. <span class="cItalic">Proceedings of the IEEE</span>, <span class="cItalic">56</span>(8), 1264– 1291.</p>
+<p class="RF">Oren, M., &amp; Nayar, S. K. (1994). Generalization of Lambert’s Reflectance Model. In <span class="cItalic">SIGGRAPH ’94: Proceedings of the 21st Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 239–246). New York: ACM Press.</p>
+<p class="RF">Osher, S., &amp; Sethian, J. A. (1988). Fronts Propagating with Curvature-Dependent Speed: Algorithms Based on Hamilton–Jacobi Formulations. <span class="cItalic">Journal of Computational Physics</span>, <span class="cItalic">79</span>(1), 12–49.</p>
+<p class="RF">Osterberg, G. (1935). Topography of the Layer of Rods and Cones in the Human Retina. <span class="cItalic">Acta Ophthalmologica</span>, <span class="cItalic">6</span>(1), 11–97. (Supplement)</p>
+<p class="RF">Paeth, A. W. (1990). A Fast Algorithm for General Raster Rotation. In <span class="cItalic">Graphics Gems</span> (pp. 179–195). Boston, MA: Academic Press.</p>
+<p class="RF"><a id="page_713"></a>Palmer, S. E. (1999). <span class="cItalic">Vision Science—Photons to Phenomenology</span>. Cambridge, MA: MIT Press.</p>
+<p class="RF">Parker, S., Martin, W., Sloan, P., Shirley, P., Smits, B., &amp; Hansen, C. (1999). Interactive Ray Tracing. In <span class="cItalic">ACM Symposium on Interactive 3D Graphics</span> (pp. 119–126). New York: ACM Press.</p>
+<p class="RF">Parker, S. G., Bigler, J., Dietrich, A., Friedrich, H., Hoberock, J., Luebke, D., . . . Stich, M. (2010, July). Optix: A General Purpose Ray Tracing Engine. <span class="cItalic">ACM Trans. Graph.</span>, <span class="cItalic">29</span>(4), 66:1–66:13. doi: 10.1145/1778765.1778803</p>
+<p class="RF">Pascale, D. (2003). <span class="cItalic">A review of RGB color spaces</span> (Tech. Rep.). The BabelColor Company. (<a href="http://www.babelcolor.com/">www.babelcolor.com</a>.)</p>
+<p class="RF">Pashler, H. E. (1998). <span class="cItalic">The Psychology of Attention</span>. Cambridge, MA: MIT Press.</p>
+<p class="RF">Pasko, A., Adzhiev, V., Sourin, A., &amp; Savchenko, V. (1995). Function Representation in Geometric Modeling: Concepts, Implementation and Applications. <span class="cItalic">The Visual Computer</span>, <span class="cItalic">11</span>(8), 419–428.</p>
+<p class="RF">Pasko, G., Pasko, A., Ikeda, M., &amp; Kunii, T. (2002, May). Bounded Blending Operations. In <span class="cItalic">Proceedings of the International Conference on Shape Modeling and Applications (SMI 2002)</span> (pp. 95–103). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Pattanaik, S. N., Ferwerda, J. A., Fairchild, M. D., &amp; Greenberg, D. P. (1998). A Multiscale Model of Adaptation and Spatial Vision for Realistic Image Display. In <span class="cItalic">SIGGRAPH ’98: Proceedings of the 25th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 287–298). New York: ACM Press.</p>
+<p class="RF">Pattanaik, S. N., &amp; Yee, H. (2002). Adaptive Gain Control for High Dynamic Range Image Display. In <span class="cItalic">SCCG ’02: Proceedings of the 18th Spring Conference on Computer Graphics</span> (pp. 83–87). New York: ACM Press.</p>
+<p class="RF">Patterson, J., Hoggar, S., &amp; Logie, J. (1991). Inverse Displacement Mapping. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">10</span>(2), 129–139.</p>
+<p class="RF">Peachey, D. R. (1985). Solid Texturing of Complex Surfaces. <span class="cItalic">Proc. SIGGRAPH ’85, Computer Graphics</span>, <span class="cItalic">19</span>(3), 279–286.</p>
+<p class="RF">Penna, M., &amp; Patterson, R. (1986). <span class="cItalic">Projective Geometry and Its Applications to Computer Graphics</span>. Englewood Cliffs, NJ: Prentice Hall.</p>
+<p class="RF">Perlin, K. (1985). An Image Synthesizer. <span class="cItalic">Computer Graphics</span>, <span class="cItalic">19</span>(3), 287–296. (SIGGRAPH ’85)</p>
+<p class="RF">Perlin, K., &amp; Hoffert, E. M. (1989). Hypertexture. <span class="cItalic">Computer Graphics</span>, <span class="cItalic">23</span>(3), 253–262. (SIGGRAPH ’89)</p>
+<p class="RF">Pharr, M., &amp; Hanrahan, P. (1996). Geometry Caching for Ray-Tracing Displacement Maps. In <span class="cItalic">Proceedings of the Eurographics Workshop on Rendering Techniques ’96</span> (pp. 31–40). London, UK: Springer-Verlag.</p>
+<p class="RF">Pharr, M., &amp; Humphreys, G. (2004). <span class="cItalic">Physically Based Rendering</span>. San Francisco, CA: Morgan Kaufmann.</p>
+<p class="RF">Pharr, M., Kolb, C., Gershbein, R., &amp; Hanrahan, P. (1997). Rendering Complex Scenes with Memory-Coherent Ray Tracing. In <span class="cItalic">SIGGRAPH ’97: Proceedings <a id="page_714"></a>of the 24th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 101–108). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Phong, B.-T. (1975). Illumination for Computer Generated Images. <span class="cItalic">Communications of the ACM</span>, <span class="cItalic">18</span>(6), 311–317.</p>
+<p class="RF">Pineda, J. (1988). A Parallel Algorithm for Polygon Rasterization. <span class="cItalic">Proc. SIGGRAPH ’88, Computer Graphics</span>, <span class="cItalic">22</span>(4), 17–20.</p>
+<p class="RF">Pitteway, M. L. V. (1967). Algorithm for Drawing Ellipses or Hyperbolae with a Digital Plotter. <span class="cItalic">Computer Journal</span>, <span class="cItalic">10</span>(3), 282–289.</p>
+<p class="RF">Plauger, P. J. (1991). <span class="cItalic">The Standard C Library</span>. Englewood Cliffs, NJ: Prentice Hall.</p>
+<p class="RF">Plumlee, M., &amp; Ware, C. (2006). Zooming Versus Multiple Window Interfaces: Cognitive Costs of Visual Comparisons. <span class="cItalic">Proc. ACM Trans. on Computer-Human Interaction (ToCHI)</span>, <span class="cItalic">13</span>(2), 179–209.</p>
+<p class="RF">Porter, T., &amp; Duff, T. (1984). Compositing Digital Images. In <span class="cItalic">SIGGRAPH ’84: Proceedings of the 11th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 253–259). New York: ACM Press.</p>
+<p class="RF">Poynton, C. (2003). <span class="cItalic">Digital Video and HDTV: Algorithms and Interfaces</span>. San Francisco: Morgan Kaufmann Publishers.</p>
+<p class="RF">Press, W. H., Teukolsky, S. A., Vetterling, W. T., &amp; Flannery, B. P. (1992). <span class="cItalic">Numerical Recipes in C: The Art of Scientific Computing</span> (Second ed.). Cambridge, UK: Cambridge University Press.</p>
+<p class="RF">Purcell, T. J., Buck, I., Mark, W. R., &amp; Hanrahan, P. (2002). Ray Tracing on Programmable Graphics Hardware. <span class="cItalic">ACM Transactions on Graphics (Proc. SIGGRAPH ’02)</span>, <span class="cItalic">21</span>(3), 703–712.</p>
+<p class="RF">Rahman, Z., Jobson, D. J., &amp; Woodell, G. A. (1996). A Multiscale Retinex for Color Rendition and Dynamic Range Compression. In <span class="cItalic">SPIE Proceedings: Applications of Digital Image Processing XIX</span> (Vol. 2847). Bellingham, WA: SPIE.</p>
+<p class="RF">Rao, R., &amp; Card, S. K. (1994). The Table Lens: Merging Graphical and Symbolic Representations in an Interactive Focus+Context Visualization for Tabular Information. In <span class="cItalic">Proc. ACM Human Factors in Computing Systems (CHI)</span> (pp. 318–322). New York: ACM Press.</p>
+<p class="RF">Reeves, W. T. (1983). Particle Systems—A Technique for Modeling a Class of Fuzzy Objects. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">2</span>(2), 91–108.</p>
+<p class="RF">Reingold, E. M., &amp; Tilford, J. S. (1981). Tidier Drawings of Trees. <span class="cItalic">IEEE Trans. Software Engineering</span>, <span class="cItalic">7</span>(2), 223–228.</p>
+<p class="RF">Reinhard, E. (2003). Parameter Estimation for Photographic Tone Reproduction. <span class="cItalic">journal of graphics tools</span>, <span class="cItalic">7</span>(1), 45–51.</p>
+<p class="RF">Reinhard, E., Ashikhmin, M., Gooch, B., &amp; Shirley, P. (2001). Color Transfer Between Images. <span class="cItalic">IEEE Computer Graphics and Applications</span>, <span class="cItalic">21</span>, 34–41.</p>
+<p class="RF">Reinhard, E., &amp; Devlin, K. (2005). Dynamic Range Reduction Inspired by Photoreceptor Physiology. <span class="cItalic">IEEE Transactions on Visualization and Computer Graphics</span>, <span class="cItalic">11</span>(1), 13–24.</p>
+<p class="RF"><a id="page_715"></a>Reinhard, E., Khan, E. A., Akyuöz, A. O., &amp; Johnson, G. M. (2008). <span class="cItalic">Color Imaging: Fundamentals and Applications</span>. Wellesley: A K Peters.</p>
+<p class="RF">Reinhard, E., Stark, M., Shirley, P., &amp; Ferwerda, J. (2002). Photographic Tone Reproduction for Digital Images. <span class="cItalic">ACM Transactions on Graphics (Proc. SIGGRAPH ’02)</span>, <span class="cItalic">21</span>(3), 267–276.</p>
+<p class="RF">Reinhard, E., Ward, G., Debevec, P., &amp; Pattanaik, S. (2005). <span class="cItalic">High Dynamic Range Imaging</span>. San Francisco: Morgan Kaufmann.</p>
+<p class="RF">Requicha, A. A. G. (1980). Representations for Rigid Solids: Theory, Methods and Systems. <span class="cItalic">Computing Surveys</span>, <span class="cItalic">12</span>(4), 437–464.</p>
+<p class="RF">Reuter, P. (2003). <span class="cItalic">Reconstruction and Rendering of Implicit Surfaces from Large Unorganized Point Sets</span> (Unpublished doctoral dissertation). LABRI - Universite Bordeaux.</p>
+<p class="RF">Reynolds, C. W. (1987). Flocks, Herds and Schools: A Distributed Behavioral Model. <span class="cItalic">Proc. SIGGRAPH ’87, Computer Graphics</span>, <span class="cItalic">21</span>(4), 25–34.</p>
+<p class="RF">Ricci, A. (1973, May). Constructive Geometry for Computer Graphics. <span class="cItalic">Computer Journal</span>, <span class="cItalic">16</span>(2), 157–160.</p>
+<p class="RF">Riesenfeld, R. F. (1981, January). Homogeneous Coordinates and Projective Planes in Computer Graphics. <span class="cItalic">IEEE Computer Graphics &amp; Applications</span>, <span class="cItalic">1</span>(1), 50–55.</p>
+<p class="RF">Roberts, L. (1965, May). <span class="cItalic">Homogenous Matrix Representation and Manipulation of N-Dimensional Constructs</span> (Tech. Rep. No. MS-1505). Lexington, MA: MIT Lincoln Laboratory.</p>
+<p class="RF">Robertson, G., Fernandez, R., Fisher, D., Lee, B., &amp; Stasko, J. (2008). Effectiveness of Animation in Trend Visualization. <span class="cItalic">IEEE Trans. on Visualization and Computer Graphics (Proc. InfoVis08)</span>, <span class="cItalic">14</span>(6), 1325–1332.</p>
+<p class="RF">Rogers, D. F. (1985). <span class="cItalic">Procedural Elements for Computer Graphics</span>. New York: McGraw Hill.</p>
+<p class="RF">Rogers, D. F. (1989). <span class="cItalic">Mathematical Elements for Computer Graphics</span>. New York: McGraw Hill.</p>
+<p class="RF">Rogers, D. F. (2000). <span class="cItalic">An Introduction to NURBS: With Historical Perspective</span>. San Francisco, CA: Morgan Kaufmann.</p>
+<p class="RF">Rogers, S. (1995). Perceiving Pictorial Space. In W. Epstein &amp; S. Rogers (Eds.), <span class="cItalic">Perception of Space and Motion</span> (Vol. 5, pp. 119–163). San Diego: Academic Press.</p>
+<p class="RF">Roth, S. (1982). Ray Casting for Modeling Solids. <span class="cItalic">Computer Graphics and Image Processing</span>, <span class="cItalic">18</span>(2), 109–144.</p>
+<p class="RF">Rubin, S. M., &amp; Whitted, T. (1980). A 3-Dimensional Representation for Fast Rendering of Complex Scenes. <span class="cItalic">Proc. SIGGRAPH ’80, Computer Graphics</span>, <span class="cItalic">14</span>(3), 110–116.</p>
+<p class="RF">Rusinkiewicz, S., &amp; Levoy, M. (2000). QSplat: A Multiresolution Point Rendering System for Large Meshes. In <span class="cItalic">SIGGRAPH ’00: Proceedings of the 27th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 343–352). Reading, MA: Addison-Wesley.</p>
+<p class="RF"><a id="page_716"></a>Rvachev, V. L. (1963). On the Analytic Description of Some Geometric Objects. <span class="cItalic">Reports of the Ukrainian Acadamey of Sciences</span>, <span class="cItalic">153</span>, 765–767.</p>
+<p class="RF">Saito, T., &amp; Takahashi, T. (1990). Comprehensible Rendering of 3-D Shapes. <span class="cItalic">Proc. SIGGRAPH ’90, Computer Graphics</span>, <span class="cItalic">24</span>(4), 197–206.</p>
+<p class="RF">Salomon, D. (1999). <span class="cItalic">Computer Graphics and Geometric Modeling</span>. New York: Springer-Verlag.</p>
+<p class="RF">Savchenko, V., Pasko, A., Okunev, O., &amp; Kunii, T. (1995). Function Representation of Solids Reconstructed from Scattered Surface Points and Contours. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">14</span>(4), 181–188.</p>
+<p class="RF">Savchenko, V. V., Pasko, A. A., Sourin, A. I., &amp; Kunii, T. L. (1998). Volume Modelling: Representations and Advanced Operations. In <span class="cItalic">CGI ’98: Proceedings of the Computer Graphics International 1</span> (pp. 4–13). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Sbert, M. (1997). <span class="cItalic">The Use of Global Random Directions to Compute Radiosity. Global Monte Carlo Techniques</span> (PhD. Thesis). Universitat Polite`nica de Catalunya.</p>
+<p class="RF">Schlick, C. (1994a). An Inexpensive BRDF Model for Physically-Based Rendering. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">13</span>(3), 233–246.</p>
+<p class="RF">Schlick, C. (1994b). Quantization Techniques for the Visualization of High Dynamic Range Pictures. In P. Shirley, G. Sakas, &amp; S. Muöller (Eds.), <span class="cItalic">Photorealistic Rendering Techniques</span> (pp. 7–20). Berlin: Springer-Verlag.</p>
+<p class="RF">Schmidt, R., Grimm, C., &amp; Wyvill, B. (2006, July). Interactive Decal Compositing with Discrete Exponential Maps. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">25</span>(3), 605–613.</p>
+<p class="RF">Schmidt, R., Wyvill, B., &amp; Galin, E. (2005). Interactive Implicit Modeling with Hierarchical Spatial Caching. In <span class="cItalic">SMI ’05: Proceedings of the International Conference on Shape Modeling and Applications 2005</span> (pp. 104– 113). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Schmidt, R., Wyvill, B., Sousa, M. C., &amp; Jorge, J. A. (2005). Shapeshop: Sketch-Based Solid Modeling with BlobTrees. In <span class="cItalic">Proceedings of the 2nd Eurographics Workshop on Sketch-Based Interfaces and Modeling.</span> Aire-la-ville, Switzerland: Eurographics Association.</p>
+<p class="RF">Sederberg, T. W., &amp; Parry, S. R. (1986). Free-Form Deformation of Solid Geometric Models. <span class="cItalic">Proc. SIGGRAPH ’86, Computer Graphics</span>, <span class="cItalic">20</span>(4), 151– 160.</p>
+<p class="RF">Seetzen, H., Heidrich, W., Stuerzlinger, W., Ward, G., Whitehead, L., Trentacoste, M., . . . Vorozcovs, A. (2004). High Dynamic Range Display Systems. <span class="cItalic">ACM Transactions on Graphics (Proc. SIGGRAPH ’04)</span>, <span class="cItalic">23</span>(3), 760–768.</p>
+<p class="RF">Seetzen, H., Whitehead, L. A., &amp; Ward, G. (2003). A High Dynamic Range Display Using Low and High Resolution Modulators. In <span class="cItalic">The Society for Information Display International Symposium.</span> San Jose, CA: Society for Information Display.</p>
+<p class="RF"><a id="page_717"></a>Segal, M., Korobkin, C., van Widenfelt, R., Foran, J., &amp; Haeberli, P. (1992). Fast Shadows and Lighting Effects Using Texture Mapping. <span class="cItalic">Proc. SIGGRAPH ’92, Computer Graphics</span>, <span class="cItalic">26</span>(2), 249–252.</p>
+<p class="RF">Shannon, C. E., &amp; Weaver, W. (1964). <span class="cItalic">The Mathematical Theory of Communication</span>. Urbana, IL: University of Illinois Press.</p>
+<p class="RF">Shapiro, V. (1988). <span class="cItalic">Theory of R-Functions and Applications: A Primer</span> (Tech. Rep. No. CPA88-3). Ithaca, NY: Cornell University.</p>
+<p class="RF">Shapiro, V. (1994). Real Functions for Representation of Rigid Solids. <span class="cItalic">Computer Aided Geometric Design</span>, <span class="cItalic">11</span>, 153–175.</p>
+<p class="RF">Shene, C.-K. (2003). <span class="cItalic">CS 3621 Introduction to Computing with Geometry Notes.</span> Available from World Wide Web. (<a href="http://www.cs.mtu.edu/">http://www.cs.mtu.edu/shene/COURS-ES/cs3621/NOTES/notes.html</a>)</p>
+<p class="RF">Sherstyuk, A. (1999). Interactive Shape Design with Convolution Surfaces. In <span class="cItalic">SMI ’99: Proceedings of the International Conference on Shape Modeling and Applications</span> (pp. 56–65). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Shirley, P. (1991). <span class="cItalic">Physically Based Lighting Calculations for Computer Graphics</span> (Unpublished doctoral dissertation). University of Illinois, Urbana-Champaign.</p>
+<p class="RF">Shirley, P., Smits, B., Hu, H., &amp; Lafortune, E. (1997). A Practitioners’ Assessment of Light Reflection Models. In <span class="cItalic">PG ’97: Proceedings of the 5th Pacific Conference on Computer Graphics and Applications</span> (pp. 40–49). Los Alamitos, CA: IEEE Computer Society Press.</p>
+<p class="RF">Shirley, P., Wang, C., &amp; Zimmerman, K. (1996). Monte Carlo Techniques for Direct Lighting Calculations. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">15</span>(1), 1–36.</p>
+<p class="RF">Shneiderman, B. (1996). The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations. In <span class="cItalic">Proc. IEEE Visual Languages</span> (pp. 336– 343). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Shreiner, D., Neider, J., Woo, M., &amp; Davis, T. (2004). <span class="cItalic">OpenGL Programming Guide</span> (Fourth ed.). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Sillion, F. X., &amp; Puech, C. (1994). <span class="cItalic">Radiosity and Global Illumination</span>. San Francisco, California: Morgan Kaufmann Publishers, Inc.</p>
+<p class="RF">Simons, D. J. (2000). Current Approaches to Change Blindness. <span class="cItalic">Visual Cognition</span>, <span class="cItalic">7</span>(1/2/3), 1–15.</p>
+<p class="RF">Slocum, T. A., McMaster, R. B., Kessler, F. C., &amp; Howard, H. H. (2008). <span class="cItalic">Thematic Cartography and Geovisualization</span> (3rd ed.). Englewood Cliffs, NJ: Prentice Hall.</p>
+<p class="RF">Smith, A. R. (1995). <span class="cItalic">A Pixel is Not a Little Square!</span> (Technical Memo No. 6). Bellingham, WA: Microsoft Research.</p>
+<p class="RF">Smith, S., Grinstein, G., &amp; Bergeron, R. D. (1991). Interactive Data Exploration with a Supercomputer. In <span class="cItalic">VIS ’91: Proceedings of the 2nd Conference on Visualization ’91</span> (pp. 248–254). Los Alamitos, CA: IEEE Computer Society Press.</p>
+<p class="RF"><a id="page_718"></a>Smits, B. E., Shirley, P., &amp; Stark, M. M. (2000). Direct Ray Tracing of Displacement Mapped Triangles. In <span class="cItalic">Proceedings of the Eurographics Workshop on Rendering Techniques 2000</span> (pp. 307–318). London, UK: Springer-Verlag.</p>
+<p class="RF">Snyder, J. M., &amp; Barr, A. H. (1987). Ray Tracing Complex Models Containing Surface Tessellations. <span class="cItalic">Proc. SIGGRAPH ’87, Computer Graphics</span>, <span class="cItalic">21</span>(4), 119–128.</p>
+<p class="RF">Sobel, I., Stone, J., &amp; Messer, R. (1975). <span class="cItalic">The Monte Carlo Method</span>. Chicago, IL: University of Chicago Press.</p>
+<p class="RF">Solomon, H. (1978). <span class="cItalic">Geometric Probability</span>. Philadelphia, PA: SIAM Press.</p>
+<p class="RF">Stam, J. (1999). Diffraction Shaders. In <span class="cItalic">SIGGRAPH ’99: Proceedings of the 26th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 101–110). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Stark, M. M., Arvo, J., &amp; Smits, B. (2005). Barycentric Parameterizations for Isotropic BRDFs. <span class="cItalic">IEEE Transactions on Visualization and Computer Graphics</span>, <span class="cItalic">11</span>(2), 126–138.</p>
+<p class="RF">Stockham, T. (1972). Image Processing in the Context of a Visual Model. <span class="cItalic">Proceedings of the IEEE</span>, <span class="cItalic">60</span>(7), 828–842.</p>
+<p class="RF">Stolte, C., Tang, D., &amp; Hanrahan, P. (2008). Polaris: A System for Query, Analysis, and Visualization of Multidimensional Databases. <span class="cItalic">Commun. ACM</span>, <span class="cItalic">51</span>(11), 75–84.</p>
+<p class="RF">Stone, M. C. (2003). <span class="cItalic">A Field Guide to Digital Color</span>. Natick, MA: A K Peters.</p>
+<p class="RF">Strang, G. (1988). <span class="cItalic">Linear Algebra and Its Applications</span> (Third ed.). Florence, KY: Brooks Cole.</p>
+<p class="RF">Sutherland, I. E., Sproull, R. F., &amp; Schumacker, R. A. (1974). A Characterization of Ten Hidden-Surface Algorithms. <span class="cItalic">ACM Computing Surveys</span>, <span class="cItalic">6</span>(1), 1–55.</p>
+<p class="RF">Thompson, W. B., &amp; Pong, T. C. (1990). Detecting Moving Objects. <span class="cItalic">International Journal of Computer Vision</span>, <span class="cItalic">4</span>(1), 39–57.</p>
+<p class="RF">Thompson, W. B., Shirley, P., &amp; Ferwerda, J. (2002). A Spatial Post-Processing Algorithm for Images of Night Scenes. <span class="cItalic">journal of graphics tools</span>, <span class="cItalic">7</span>(1), 1–12.</p>
+<p class="RF">Tomasi, C., &amp; Manduchi, R. (1998). Bilateral Filtering for Gray and Color Images. In <span class="cItalic">Proc. IEEE International Conference on Computer Vision</span> (pp. 836–846). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">Tory, M., Kirkpatrick, A. E., Atkins, M. S., &amp; Moöller, T. (2006). Visualization Task Performance with 2D, 3D, and Combination Displays. <span class="cItalic">IEEE Trans. Visualization and Computer Graphics (TVCG)</span>, <span class="cItalic">12</span>(1), 2–13.</p>
+<p class="RF">Tumblin, J., &amp; Turk, G. (1999). LCIS: A Boundary Hierarchy for Detail-Preserving Contrast Reduction. In A. Rockwood (Ed.), <span class="cItalic">SIGGRAPH ’99: Proceedings of the 26th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 83–90). Reading, MA: Addison Wesley Longman.</p>
+<p class="RF">Turk, G., &amp; O’Brien, J. (1999). Shape Transformation Using Variational Implicit Functions. In <span class="cItalic">SIGGRAPH ’99: Proceedings of the 26th Annual Conference <a id="page_719"></a>on Computer Graphics and Interactive Techniques</span> (pp. 335–342). New York: ACM Press/Addison-Wesley Publishing Co.</p>
+<p class="RF">Turk, G., &amp; O’Brien, J. F. (2002). Modelling with Implicit Surfaces that Interpolate. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">21</span>(4), 855–873.</p>
+<p class="RF">Turkowski, K. (1990). Properties of Surface-Normal Transformations. In <span class="cItalic">Graphics Gems</span> (pp. 539–547). Boston: Academic Press.</p>
+<p class="RF">Tversky, B., Morrison, J., &amp; Betrancourt, M. (2002). Animation: Can It Facilitate? <span class="cItalic">International Journal of Human Computer Studies</span>, <span class="cItalic">57</span>(4), 247–262.</p>
+<p class="RF">Upstill, S. (1985). <span class="cItalic">The Realistic Presentation of Synthetic Images: Image Processing in Computer Graphics</span> (Unpublished doctoral dissertation). University of California at Berkeley.</p>
+<p class="RF">van Aken, J., &amp; Novak, M. (1985). Curve-Drawing Algorithms for Raster Displays. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">4</span>(2), 147–169.</p>
+<p class="RF">van Ham, F., &amp; van Wijk, J. J. (2004). Interactive Visualization of Small World Graphs. In <span class="cItalic">INFOVIS ’04: Proceedings of the IEEE Symposium on Information Visualization</span> (pp. 199–206). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">van Wijk, J. J., &amp; van Selow, E. R. (1999). Cluster and Calendar-Based Visualization of Time Series Data. In <span class="cItalic">INFOVIS ’99: Proceedings of the 1999 IEEE Symposium on Information Visualization</span> (pp. 4–9). Washington, DC: IEEE Computer Society Press.</p>
+<p class="RF">van Overveld, K., &amp; Wyvill, B. (2004). Shrinkwrap: An Efficient Adaptive Algorithm for Triangulating an Iso-Surface. <span class="cItalic">The Visual Computer</span>, <span class="cItalic">20</span>(6), 362–369.</p>
+<p class="RF">Veach, E., &amp; Guibas, L. J. (1997). Metropolis Light Transport. In <span class="cItalic">SIGGRAPH ’97: Proceedings of the 24th Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 65–76). Reading, MA: Addison-Wesley.</p>
+<p class="RF">Wald, I., Slusallek, P., Benthin, C., &amp; Wagner, M. (2001). Interactive Distributed Ray Tracing of Highly Complex Models. In <span class="cItalic">Proceedings of the 12th Eurographics Workshop on Rendering Techniques</span> (pp. 277–288). London, UK: Springer-Verlag.</p>
+<p class="RF">Walter, B., Hubbard, P. M., Shirley, P., &amp; Greenberg, D. F. (1997). Global Illumination Using Local Linear Density Estimation. <span class="cItalic">ACM Transactions on Graphics</span>, <span class="cItalic">16</span>(3), 217–259.</p>
+<p class="RF">Wandell, B. A. (1995). <span class="cItalic">Foundations of Vision</span>. Sunderland, MA: Sinauer Associates.</p>
+<p class="RF">Wann, J. P., Rushton, S., &amp; Mon-Williams, M. (1995). Natural Problems for Stereoscopic Depth Perception in Virtual Environments. <span class="cItalic">Vision Research</span>, <span class="cItalic">35</span>(19), 2731–2736.</p>
+<p class="RF">Ward, G., &amp; Simmons, M. (2004). Subband Encoding of High Dynamic Range Imagery. In <span class="cItalic">First ACM Symposium on Applied Perception in Graphics and Visualization (APGV)</span> (pp. 83–90). NY: ACM Press.</p>
+<p class="RF"><a id="page_720"></a>Ward, G. J. (1992). Measuring and Modeling Anisotropic Reflection. <span class="cItalic">Proc. SIGGRAPH ’92, Computer Graphics</span>, <span class="cItalic">26</span>(2), 265–272.</p>
+<p class="RF">Ward, G. J. (1994). The RADIANCE Lighting Simulation and Rendering System. In A. Glassner (Ed.), <span class="cItalic">SIGGRAPH ’94: Proceedings of the 21st Annual Conference on Computer Graphics and Interactive Techniques</span> (pp. 459–472). New York: ACM Press.</p>
+<p class="RF">Ward, M. O. (2002, December). A Taxonomy of Glyph Placement Strategies for Multidimensional Data Visualization. <span class="cItalic">Information Visualization Journal</span>, <span class="cItalic">1</span>(3–4), 194–210.</p>
+<p class="RF">Ward Larson, G., Rushmeier, H., &amp; Piatko, C. (1997). A Visibility Matching Tone Reproduction Operator for High Dynamic Range Scenes. <span class="cItalic">IEEE Transactions on Visualization and Computer Graphics</span>, <span class="cItalic">3</span>(4), 291–306.</p>
+<p class="RF">Ward Larson, G., &amp; Shakespeare, R. A. (1998). <span class="cItalic">Rendering with Radiance</span>. San Francisco, CA: Morgan Kaufmann Publishers.</p>
+<p class="RF">Ware, C. (2000). <span class="cItalic">Information Visualization: Perception for Design</span>. Boston, MA: Morgan Kaufmann/Academic Press.</p>
+<p class="RF">Ware, C. (2001). Designing With a 2 1/2 D Attitude. <span class="cItalic">Information Design Journal</span>, <span class="cItalic">10</span>(3), 255–262.</p>
+<p class="RF">Ware, C., Purchase, H., Colpys, L., &amp; McGill, M. (2002). Cognitive Measures of Graph Aesthetics. <span class="cItalic">Information Visualization</span>, <span class="cItalic">1</span>(2), 103–110.</p>
+<p class="RF">Warn, D. R. (1983). Lighting Controls for Synthetic Images. <span class="cItalic">Proc. SIGGRAPH ’83, Computer Graphics</span>, <span class="cItalic">17</span>(3), 13–21.</p>
+<p class="RF">Watt, A. (1991). <span class="cItalic">Advanced Animation and Rendering Techniques</span>. Reading, MA: Addison-Wesley.</p>
+<p class="RF">Watt, A. (1993). <span class="cItalic">3D Computer Graphics</span>. Reading, MA: Addison-Wesley.</p>
+<p class="RF">Wegman, E. J. (1990, Sep). Hyperdimensional Data Analysis Using Parallel Coordinates. <span class="cItalic">Journ. American Statistical Association</span>, <span class="cItalic">85</span>(411), 664–675.</p>
+<p class="RF">Whitted, T. (1980). An Improved Illumination Model for Shaded Display. <span class="cItalic">Communications of the ACM</span>, <span class="cItalic">23</span>(6), 343–349.</p>
+<p class="RF">Williams, A., Barrus, S., Morley, R. K., &amp; Shirley, P. (2005). An Efficient and Robust Ray-Box Intersection Algorithm. <span class="cItalic">journal of graphics tools</span>, <span class="cItalic">10</span>(1), 49–54.</p>
+<p class="RF">Williams, L. (1991). Shading in Two Dimensions. In <span class="cItalic">Proceedings of Graphics Interface</span> (pp. 143–151). Wellesley, MA: A K Peters &amp; Canadian Human-Computer Communications Society.</p>
+<p class="RF">Wyszecki, G., &amp; Stiles, W. (2000). <span class="cItalic">Color Science: Concepts and Methods, Quantitative Data and Formulae</span> (Second ed.). New York: Wiley.</p>
+<p class="RF">Wyvill, B., Galin, E., &amp; Guy, A. (1999). Extending the CSG Tree: Warping, Blending and Boolean Operations in an Implicit Surface Modeling System. <span class="cItalic">Computer Graphics Forum</span>, <span class="cItalic">18</span>(2), 149–158.</p>
+<p class="RF">Wyvill, B., McPheeters, C., &amp; Wyvill, G. (1986). Data Structures for Soft Objects. <span class="cItalic">The Visual Computer</span>, <span class="cItalic">2</span>(4), 227–234.</p>
+<p class="RF"><a id="page_721"></a>Yantis, S. (Ed.). (2000). <span class="cItalic">Visual Perception: Essential Readings</span>. London, UK: Taylor &amp; Francis Group.</p>
+<p class="RF">Yessios, C. I. (1979). Computer Drafting of Stones, Wood, Plant and Ground Materials. <span class="cItalic">Proc. SIGGRAPH ’79, Computer Graphics</span>, <span class="cItalic">13</span>(2), 190–198.</p>
+<p class="RF">Yonas, A., Goldsmith, L. T., &amp; Hallstrom, J. L. (1978). The Development of Sensitivity to Information from Cast Shadows in Pictures. <span class="cItalic">Perception</span>, <span class="cItalic">7</span>, 333–342.</p>
+<div class="annotator-outer annotator-viewer viewer annotator-hide">
+  <ul class="annotator-widget annotator-listing"></ul>
+</div><div class="annotator-modal-wrapper annotator-editor-modal annotator-editor annotator-hide">
+	<div class="annotator-outer editor">
+		<h2 class="title">Highlight</h2>
+		<form class="annotator-widget">
+			<ul class="annotator-listing">
+			<li class="annotator-item"><textarea id="annotator-field-24" placeholder="Add a note using markdown (optional)" class="js-editor" maxlength="750"></textarea></li></ul>
+			<div class="annotator-controls">
+				<a class="link-to-markdown" href="https://daringfireball.net/projects/markdown/basics" target="_blank">?</a>
+				<ul>
+					<li class="delete annotator-hide"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#delete" class="annotator-delete-note button positive">Delete Note</a></li>
+					<li class="save"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#save" class="annotator-save annotator-focus button positive">Save Note</a></li>
+					<li class="cancel"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#cancel" class="annotator-cancel button">Cancel</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div><div class="annotator-modal-wrapper annotator-delete-confirm-modal" style="display: none;">
+  <div class="annotator-outer">
+    <h2 class="title">Highlight</h2>
+      <a class="js-close-delete-confirm annotator-cancel close" href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#close">Close</a>
+      <div class="annotator-widget">
+         <div class="delete-confirm">
+            Are you sure you want to permanently delete this note?
+         </div>
+         <div class="annotator-controls">
+            <a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#cancel" class="annotator-cancel button js-cancel-delete-confirm">No, I changed my mind</a>
+            <a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#delete" class="annotator-delete button positive js-delete-confirm">Yes, delete it</a>
+         </div>
+       </div>
+   </div>
+</div><div class="annotator-adder" style="display: none;">
+	<ul class="adders ">
+		
+		<li class="copy"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#">Copy</a></li>
+		
+		<li class="add-highlight"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#">Add Highlight</a></li>
+		<li class="add-note"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#">
+			
+				Add Note
+			
+		</a></li>
+		
+	</ul>
+</div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_C026.xhtml" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 26 Visualization</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+  <span class="nav-link"></span>
+  
+  </div>
+
+</section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+        
+        
+          
+          
+            <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot" style="padding-bottom: 69px;">
+    <a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" class="icon-up" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+    <ul class="js-footer-nav">
+      
+        <li><a class="t-recommendations-footer" href="https://learning.oreilly.com/r/">Recommended</a></li>
+      
+      <li>
+      <a class="t-queue-footer" href="https://learning.oreilly.com/playlists/">Playlists</a>
+      </li>
+      
+        <li><a class="t-recent-footer" href="https://learning.oreilly.com/history/">History</a></li>
+        <li><a class="t-topics-footer" href="https://learning.oreilly.com/topics?q=*&amp;limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="https://learning.oreilly.com/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="https://learning.oreilly.com/u/preferences/">Settings</a></li>
+      <li class="full-support"><a href="https://www.oreilly.com/online-learning/support/">Support</a></li>
+      <li><a href="https://learning.oreilly.com/online-learning/apps.html">Get the App</a></li>
+      <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">© 2019 <a href="https://learning.oreilly.com/" target="_blank">Safari</a>.</span>
+    <a href="https://learning.oreilly.com/terms/">Terms of Service</a> /
+    <a href="https://learning.oreilly.com/privacy.html">Privacy Policy</a>
+  </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"licenseKey":"510f1a6865","errorBeacon":"bam.nr-data.net","transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofXFBHDVYdR1pQQxZeRl1QQj1aWkU=","beacon":"bam.nr-data.net","queueTime":2,"applicationID":"3275661,67267027,67267028","applicationTime":155,"agent":""}</script>
+
+
+    
+    <script src="./References - Fundamentals of Computer Graphics, 4th Edition_files/saved_resource" charset="utf-8"></script>
+<script type="text/javascript" id="">(function(){function b(){!1===c&&(c=!0,Munchkin.init("107-FMS-070"))}var c=!1,a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//munchkin.marketo.net/munchkin.js";a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||b()};a.onload=b;document.getElementsByTagName("head")[0].appendChild(a)})();</script><script type="text/javascript" id="">(function(){window.medalliaUserIdentifier=document.documentElement.dataset.userUuid;window.medalliaUserName=document.documentElement.dataset.username})();</script>
+<script type="text/javascript" id="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/embed.js.download"></script><script type="text/javascript" id="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/digitalpi-utm-tracker-oreilly.com.js.download"></script><script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1732687426968531");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1732687426968531&amp;ev=PageView&amp;noscript=1"></noscript><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.3614381240402751"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.7124633219858325" width="0" height="0" alt="" src="./References - Fundamentals of Computer Graphics, 4th Edition_files/0"></div>
+
+
+
+    <script src="./References - Fundamentals of Computer Graphics, 4th Edition_files/saved_resource(1)" charset="utf-8"></script>
+  
+
+<div class="annotator-notice"></div><div class="font-flyout" style="top: 201.003px; left: 1818px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781482229417/K22616_references.xhtml#">Reset</a>
+</div>
+</div><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: MathJax_SansSerif-italic, sans-serif;"></div></div></body></html>

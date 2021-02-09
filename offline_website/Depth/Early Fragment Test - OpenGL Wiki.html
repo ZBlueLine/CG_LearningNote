@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.khronos.org/opengl/wiki/Early_Fragment_Test -->
+<html class="client-js" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><script class="darkreader darkreader--proxy">(function injectProxy() {
+        document.dispatchEvent(
+            new CustomEvent("__darkreader__inlineScriptsAllowed")
+        );
+        const addRuleDescriptor = Object.getOwnPropertyDescriptor(
+            CSSStyleSheet.prototype,
+            "addRule"
+        );
+        const insertRuleDescriptor = Object.getOwnPropertyDescriptor(
+            CSSStyleSheet.prototype,
+            "insertRule"
+        );
+        const deleteRuleDescriptor = Object.getOwnPropertyDescriptor(
+            CSSStyleSheet.prototype,
+            "deleteRule"
+        );
+        const removeRuleDescriptor = Object.getOwnPropertyDescriptor(
+            CSSStyleSheet.prototype,
+            "removeRule"
+        );
+        const cleanUp = () => {
+            Object.defineProperty(
+                CSSStyleSheet.prototype,
+                "addRule",
+                addRuleDescriptor
+            );
+            Object.defineProperty(
+                CSSStyleSheet.prototype,
+                "insertRule",
+                insertRuleDescriptor
+            );
+            Object.defineProperty(
+                CSSStyleSheet.prototype,
+                "deleteRule",
+                deleteRuleDescriptor
+            );
+            Object.defineProperty(
+                CSSStyleSheet.prototype,
+                "removeRule",
+                removeRuleDescriptor
+            );
+            document.removeEventListener("__darkreader__cleanUp", cleanUp);
+            document.removeEventListener(
+                "__darkreader__addUndefinedResolver",
+                addUndefinedResolver
+            );
+        };
+        const addUndefinedResolver = (e) => {
+            customElements.whenDefined(e.detail.tag).then(() => {
+                document.dispatchEvent(
+                    new CustomEvent("__darkreader__isDefined", {
+                        detail: {tag: e.detail.tag}
+                    })
+                );
+            });
+        };
+        document.addEventListener("__darkreader__cleanUp", cleanUp);
+        document.addEventListener(
+            "__darkreader__addUndefinedResolver",
+            addUndefinedResolver
+        );
+        const updateSheetEvent = new Event("__darkreader__updateSheet");
+        function proxyAddRule(selector, style, index) {
+            addRuleDescriptor.value.call(this, selector, style, index);
+            if (
+                this.ownerNode &&
+                !this.ownerNode.classList.contains("darkreader")
+            ) {
+                this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+            return -1;
+        }
+        function proxyInsertRule(rule, index) {
+            const returnValue = insertRuleDescriptor.value.call(
+                this,
+                rule,
+                index
+            );
+            if (
+                this.ownerNode &&
+                !this.ownerNode.classList.contains("darkreader")
+            ) {
+                this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+            return returnValue;
+        }
+        function proxyDeleteRule(index) {
+            deleteRuleDescriptor.value.call(this, index);
+            if (
+                this.ownerNode &&
+                !this.ownerNode.classList.contains("darkreader")
+            ) {
+                this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+        }
+        function proxyRemoveRule(index) {
+            removeRuleDescriptor.value.call(this, index);
+            if (
+                this.ownerNode &&
+                !this.ownerNode.classList.contains("darkreader")
+            ) {
+                this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+        }
+        Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "addRule",
+            Object.assign({}, addRuleDescriptor, {value: proxyAddRule})
+        );
+        Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "insertRule",
+            Object.assign({}, insertRuleDescriptor, {value: proxyInsertRule})
+        );
+        Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "deleteRule",
+            Object.assign({}, deleteRuleDescriptor, {value: proxyDeleteRule})
+        );
+        Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "removeRule",
+            Object.assign({}, removeRuleDescriptor, {value: proxyRemoveRule})
+        );
+    })()</script><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+
+<title>Early Fragment Test - OpenGL Wiki</title>
+<script async="" src="./Early Fragment Test - OpenGL Wiki_files/analytics.js.下载"></script><script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"YBQjThwx3eIqXkSJ6fAAGgAAAk4","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Early_Fragment_Test","wgTitle":"Early Fragment Test","wgCurRevisionId":14496,"wgRevisionId":14496,"wgArticleId":1547,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated source tags","Pages with syntax highlighting errors","Hardware"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Early_Fragment_Test","wgRelevantArticleId":1547,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,
+"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","skins.vector.styles.legacy":"ready","mediawiki.toc.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js","ext.moderation.notify","ext.moderation.notify.desktop"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="./Early Fragment Test - OpenGL Wiki_files/load.php"><style class="darkreader darkreader--sync" media="screen"></style>
+<script async="" src="./Early Fragment Test - OpenGL Wiki_files/load(1).php"></script>
+<style>
+#pending-review{border:3px solid red}
+@media screen {
+	.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;font-size:94%}}
+#postedit-modqueued a{font-weight:bold}#pending-review{display:inline-block;padding:5px;margin:10px;margin-left:0;font-weight:bold;font-size:120%;text-transform:uppercase}</style><style class="darkreader darkreader--sync" media="screen"></style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./Early Fragment Test - OpenGL Wiki_files/load(2).php"><style class="darkreader darkreader--sync" media="screen"></style>
+<meta name="generator" content="MediaWiki 1.35.1">
+<link rel="shortcut icon" href="https://www.khronos.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.khronos.org/opengl/wiki_opengl/opensearch_desc.php" title="OpenGL Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://www.khronos.org/opengl/wiki_opengl/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="OpenGL Wiki Atom feed" href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Special:RecentChanges&amp;feed=atom">
+<!--[if lt IE 9]><script src="/opengl/wiki_opengl/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+<meta name="darkreader" content="aac6583f3f2f4ecb5cf4869abe8fe967"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}</style></head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Early_Fragment_Test rootpage-Early_Fragment_Test skin-vector action-view skin-vector-legacy">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" lang="en">Early Fragment Test</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From OpenGL Wiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="https://www.khronos.org/opengl/wiki/Early_Fragment_Test#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="https://www.khronos.org/opengl/wiki/Early_Fragment_Test#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<div style="width:728px;margin-left: auto;margin-right:auto;">
+<script type="text/javascript"><!--// <![CDATA[
+   OA_show(1);
+// ]]> --></script>
+</div>
+<div class="mw-parser-output"><p><b>Early Fragment Test</b> (sometimes called <b>Early Depth Test</b>) is a feature supported by many GPUs that allow the certain <a href="https://www.khronos.org/opengl/wiki/Per-Sample_Processing" title="Per-Sample Processing">Per-Sample Processing</a> tests that <a href="https://www.khronos.org/opengl/wiki/Fragment_Discarding" class="mw-redirect" title="Fragment Discarding">discard fragments</a> to proceed before <a href="https://www.khronos.org/opengl/wiki/Fragment_Shader" title="Fragment Shader">fragment processing</a> in the <a href="https://www.khronos.org/opengl/wiki/Rendering_Pipeline_Overview" title="Rendering Pipeline Overview">rendering pipeline</a>. This feature can be active in two ways: as an optimization and by explicit user control (with OpenGL 4.2<span> or </span><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/shader_image_load_store.txt">ARB_shader_image_load_store</a>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://www.khronos.org/opengl/wiki/Early_Fragment_Test#Affected_operations"><span class="tocnumber">1</span> <span class="toctext">Affected operations</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="https://www.khronos.org/opengl/wiki/Early_Fragment_Test#Optimization"><span class="tocnumber">2</span> <span class="toctext">Optimization</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="https://www.khronos.org/opengl/wiki/Early_Fragment_Test#Limitations"><span class="tocnumber">2.1</span> <span class="toctext">Limitations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="https://www.khronos.org/opengl/wiki/Early_Fragment_Test#Explicit_specification"><span class="tocnumber">3</span> <span class="toctext">Explicit specification</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Affected_operations">Affected operations</span></h2>
+<p>The following <a href="https://www.khronos.org/opengl/wiki/Per-Sample_Processing" title="Per-Sample Processing">Per-Sample Processing</a> steps can be performed before the fragment shader:
+</p>
+<ul><li><a href="https://www.khronos.org/opengl/wiki/Per-Sample_Processing#Pixel_ownership_test" title="Per-Sample Processing">The pixel ownership test</a></li>
+<li><a href="https://www.khronos.org/opengl/wiki/Scissor_Test" title="Scissor Test">The scissor test</a></li>
+<li><a href="https://www.khronos.org/opengl/wiki/Stencil_Test" title="Stencil Test">The stencil test</a></li>
+<li><a href="https://www.khronos.org/opengl/wiki/Depth_Test" title="Depth Test">The depth test</a></li>
+<li><a href="https://www.khronos.org/opengl/wiki/Query_Object#Occlusion_queries" title="Query Object">Occlusion query updating</a></li></ul>
+<p>Note that with OpenGL 4.2<span> or </span><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/shader_image_load_store.txt">ARB_shader_image_load_store</a>, the pixel ownership and scissor tests will <i>always</i> be performed early.
+</p>
+<h2><span class="mw-headline" id="Optimization">Optimization</span></h2>
+<p>Early fragment tests, as an optimization, exist to prevent unnecessary executions of the <a href="https://www.khronos.org/opengl/wiki/Fragment_Shader" title="Fragment Shader">Fragment Shader</a>. If a fragment will be discarded based on the <a href="https://www.khronos.org/opengl/wiki/Depth_Test" title="Depth Test">Depth Test</a> (due perhaps to being behind other geometry), it saves performance to avoid executing the fragment shader. There is specialized hardware that makes this particularly efficient in many GPUs.
+</p><p>The most effective way to use early depth test hardware is to run a depth-only pre-processing pass. This means to render all available geometry, using minimal shaders and a rendering pipeline that <a href="https://www.khronos.org/opengl/wiki/Write_Mask" title="Write Mask">only writes to the depth buffer</a>. The <a href="https://www.khronos.org/opengl/wiki/Vertex_Shader" title="Vertex Shader">Vertex Shader</a> should do nothing more than transform positions, and the <a href="https://www.khronos.org/opengl/wiki/Fragment_Shader#Optional" title="Fragment Shader">Fragment Shader does not even need to exist</a>.
+</p><p>This provides the best performance gain if the fragment shader is expensive, or if you intend to use multiple passes across the geometry.
+</p>
+<h3><span class="mw-headline" id="Limitations">Limitations</span></h3>
+<p>The <a href="https://www.khronos.org/opengl/wiki/OpenGL_Specification" title="OpenGL Specification">OpenGL Specification</a> states that these operations happens after fragment processing. However, a specification only defines apparent behavior, so the implementation is only required to behave "as if" it happened afterwards.
+</p><p>Therefore, an implementation is free to apply early fragment tests if the <a href="https://www.khronos.org/opengl/wiki/Fragment_Shader" title="Fragment Shader">Fragment Shader</a> being used does not do anything that would impact the results of those tests. So if a fragment shader writes to <span class="tpl-code">gl_FragDepth</span>, thus changing the fragment's depth value, then early testing cannot take place, since the test must use the new computed value.
+</p>
+<div style="margin-left: 3em;">
+<b>Note:</b> Do recall that if a fragment shader writes to <span class="tpl-code">gl_FragDepth</span>, even conditionally, it must write to it at least once on all codepaths.</div>
+<p>There can be other hardware-based limitations as well. For example, some hardware will not execute an early depth test if the (deprecated) alpha test is active, as these use the same hardware on that platform. Because this is a hardware-based optimization, OpenGL has no direct controls that will tell you if early depth testing will happen.
+</p><p>Similarly, if the <a href="https://www.khronos.org/opengl/wiki/Fragment_Shader#Special_operations" title="Fragment Shader">fragment shader discards the fragment with the <span class="tpl-code">discard</span> keyword</a>, this will almost always turn off early depth tests on some hardware. Note that even <i>conditional</i> use of <span class="tpl-code">discard</span> will mean that the FS will turn off early depth tests.
+</p>
+<div style="margin-left: 3em;">
+<b>Note:</b> All of the above limitations apply only to early testing as an optimization. They do not apply to anything below.</div>
+<h2><span class="mw-headline" id="Explicit_specification">Explicit specification</span></h2>
+<table class="infobox" cellspacing="5" style="width: 22em; text-align: left; font-size: 88%; line-height: 1.5em; float: right; border-collapse: separate; border-spacing: 0px; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0); background-color: rgb(248, 248, 248); margin: 5px; padding: 0.5em; --darkreader-inline-border-top:#8c8273; --darkreader-inline-border-right:#8c8273; --darkreader-inline-border-bottom:#8c8273; --darkreader-inline-border-left:#8c8273; --darkreader-inline-bgcolor:#1c1e1f;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-bgcolor=""><caption class="" style="font-size: 125%; font-weight: bold; padding-bottom: 4px;">Early Fragment Tests</caption>
+<tbody><tr>
+  <td></td>
+  <td></td>
+  <td style="width: 1em;"></td>
+</tr>
+<tr class="" valign="top"><th scope="row" colspan="2" style="text-align:left; padding-bottom: 0.5em;">Core in version</th>
+    <td class="" style="padding-bottom: 0.5em;">
+4.6</td></tr>
+  <tr class="" valign="top"><th scope="row" colspan="2" style="text-align:left; padding-bottom: 0.5em;">Core since version</th>
+    <td class="" style="padding-bottom: 0.5em;">
+4.2</td></tr>
+  
+  
+  
+  
+  
+  
+  
+  
+ <tr class="" valign="top"><th scope="row" style="text-align:left; padding-bottom: 0.5em;">Core ARB extension</th>
+    <td class="" colspan="2" style="padding-bottom: 0.5em;">
+<a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/shader_image_load_store.txt">ARB_shader_image_load_store</a></td></tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</tbody></table>
+<p>More recent hardware can force early depth tests, using a special fragment shader layout qualifier:
+<br style="clear: both">
+</p>
+<div class="mw-highlight mw-highlight-lang-glsl mw-content-ltr" dir="ltr"><pre>layout(early_fragment_tests) in;</pre></div>
+<p>This will also perform early stencil tests.
+</p><p>There is a caveat with this. This feature <i>cannot</i> be used to violate the sanctity of the depth test. When this is activated, any writes to <span class="tpl-code">gl_FragDepth</span> will be <i>ignored</i>. The value written to the depth buffer will be exactly what was tested <i>against</i> the depth buffer: the fragment's depth computed through rasterization.
+</p><p>This feature exists to ensure proper behavior when using <a href="https://www.khronos.org/opengl/wiki/Image_Load_Store" title="Image Load Store">Image Load Store</a> or other <a href="https://www.khronos.org/opengl/wiki/Incoherent_Memory_Access" class="mw-redirect" title="Incoherent Memory Access">incoherent memory writing</a>. Without turning this on, fragments that fail the depth test would still perform their Image Load/Store operations, since the fragment shader that performed those operations successfully executed. However, with early fragment tests, those tests were run before the fragment shader. So this ensures that image load/store operations will only happen on fragments that pass the depth test.
+</p><p>Note that enabling this feature has consequences for <a href="https://www.khronos.org/opengl/wiki/Fragment_Discarding" class="mw-redirect" title="Fragment Discarding">the results of a discarded fragment.</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20210129150135
+Cache expiry: 1209600
+Dynamic content: false
+Complications: []
+CPU time usage: 0.074 seconds
+Real time usage: 0.086 seconds
+Preprocessor visited node count: 680/1000000
+Post‐expand include size: 6786/2097152 bytes
+Template argument size: 1719/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 171/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   53.362      1 -total
+ 37.10%   19.799      1 Template:Infobox_feature
+ 32.16%   17.160      1 Template:Infobox2
+ 13.75%    7.336     10 Template:Infobox/longrow
+ 11.56%    6.167      2 Template:Require
+  9.44%    5.040      2 Template:Note
+  8.87%    4.733      5 Template:Code
+  7.75%    4.134     10 Template:Infobox/shortrow
+  4.93%    2.633      2 Template:Note_style
+  4.86%    2.594      1 Template:Clear_float
+-->
+
+<!-- Saved in parser cache with key khronos_opengl_wiki-mw_:pcache:idhash:1547-0!canonical and timestamp 20210129150134 and revision id 14496
+ -->
+</div></div><div class="printfooter">Retrieved from "<a dir="ltr" href="http://www.khronos.org/opengl/wiki_opengl/index.php?title=Early_Fragment_Test&amp;oldid=14496">http://www.khronos.org/opengl/wiki_opengl/index.php?title=Early_Fragment_Test&amp;oldid=14496</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://www.khronos.org/opengl/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Category:Pages_using_deprecated_source_tags&amp;action=edit&amp;redlink=1" class="new" title="Category:Pages using deprecated source tags (page does not exist)">Pages using deprecated source tags</a></li><li><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Category:Pages_with_syntax_highlighting_errors&amp;action=edit&amp;redlink=1" class="new" title="Category:Pages with syntax highlighting errors (page does not exist)">Pages with syntax highlighting errors</a></li><li><a href="https://www.khronos.org/opengl/wiki/Category:Hardware" title="Category:Hardware">Hardware</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="vector-menu" aria-labelledby="p-personal-label" role="navigation">
+	<h3 id="p-personal-label">
+		<span>Personal tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="pt-createaccount"><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Special:CreateAccount&amp;returnto=Early+Fragment+Test" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Special:UserLogin&amp;returnto=Early+Fragment+Test" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-namespaces-label" role="navigation">
+	<h3 id="p-namespaces-label">
+		<span>Namespaces</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="https://www.khronos.org/opengl/wiki/Early_Fragment_Test" title="View the content page [alt-shift-c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Talk:Early_Fragment_Test&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [alt-shift-t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-variants-label" role="navigation">
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-variants-label">
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-views-label" role="navigation">
+	<h3 id="p-views-label">
+		<span>Views</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-view" class="collapsible selected"><a href="https://www.khronos.org/opengl/wiki/Early_Fragment_Test">Read</a></li><li id="ca-viewsource" class="collapsible"><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Early_Fragment_Test&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></li><li id="ca-history" class="collapsible"><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Early_Fragment_Test&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-cactions-label" role="navigation">
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<div id="p-search" role="search">
+	<h3>
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="https://www.khronos.org/opengl/wiki_opengl/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search OpenGL Wiki" title="Search OpenGL Wiki [alt-shift-f]" accesskey="f" id="searchInput">
+			<input type="hidden" name="title" value="Special:Search">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton">
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a title="Visit the main page" class="mw-wiki-logo" href="https://www.khronos.org/opengl/wiki/Main_Page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-navigation" class="vector-menu vector-menu-portal portal portal-first" aria-labelledby="p-navigation-label" role="navigation">
+	<h3 id="p-navigation-label">
+		<span>Navigation</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-mainpage"><a href="https://www.khronos.org/opengl/wiki/Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main Page</a></li><li id="n-Getting-Started"><a href="https://www.khronos.org/opengl/wiki/Getting_Started" rel="nofollow">Getting Started</a></li><li id="n-Download-OpenGL"><a href="https://www.khronos.org/opengl/wiki/Getting_Started" rel="nofollow">Download OpenGL</a></li><li id="n-Registry"><a href="https://www.khronos.org/registry/OpenGL/" rel="nofollow">Registry</a></li><li id="n-Reference-Pages"><a href="https://www.khronos.org/registry/OpenGL-Refpages/gl4/" rel="nofollow">Reference Pages</a></li><li id="n-Reference-Guide"><a href="https://www.khronos.org/developers/reference-cards/" rel="nofollow">Reference Guide</a></li><li id="n-News"><a href="https://www.khronos.org/news/tags/tag/OpenGL/" rel="nofollow">News</a></li><li id="n-Community-Forums"><a href="https://www.opengl.org/discussion_boards" rel="nofollow">Community Forums</a></li><li id="n-About-OpenGL"><a href="https://www.khronos.org/opengl/" rel="nofollow">About OpenGL</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Help" class="vector-menu vector-menu-portal portal" aria-labelledby="p-Help-label" role="navigation">
+	<h3 id="p-Help-label">
+		<span>Help</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-Contact-Us"><a href="https://www.khronos.org/about/contact/" rel="nofollow">Contact Us</a></li><li id="n-Privacy-Policy"><a href="https://www.khronos.org/legal/privacy" rel="nofollow">Privacy Policy</a></li><li id="n-Help-Editing"><a href="https://www.mediawiki.org/wiki/Help:Contents">Help Editing</a></li><li id="n-recentchanges"><a href="https://www.khronos.org/opengl/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li></ul>
+		
+	</div>
+</nav>
+
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation">
+	<h3 id="p-tb-label">
+		<span>Tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="https://www.khronos.org/opengl/wiki/Special:WhatLinksHere/Early_Fragment_Test" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://www.khronos.org/opengl/wiki/Special:RecentChangesLinked/Early_Fragment_Test" rel="nofollow" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://www.khronos.org/opengl/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Early_Fragment_Test&amp;oldid=14496" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://www.khronos.org/opengl/wiki_opengl/index.php?title=Early_Fragment_Test&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo">
+	<ul id="footer-info">
+		<li id="footer-info-lastmod"> This page was last edited on 5 January 2019, at 21:46.</li>
+	</ul>
+	<div style="clear: both;"></div>
+</footer>
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.074","walltime":"0.086","ppvisitednodes":{"value":680,"limit":1000000},"postexpandincludesize":{"value":6786,"limit":2097152},"templateargumentsize":{"value":1719,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":171,"limit":5000000},"timingprofile":["100.00%   53.362      1 -total"," 37.10%   19.799      1 Template:Infobox_feature"," 32.16%   17.160      1 Template:Infobox2"," 13.75%    7.336     10 Template:Infobox/longrow"," 11.56%    6.167      2 Template:Require","  9.44%    5.040      2 Template:Note","  8.87%    4.733      5 Template:Code","  7.75%    4.134     10 Template:Infobox/shortrow","  4.93%    2.633      2 Template:Note_style","  4.86%    2.594      1 Template:Clear_float"]},"cachereport":{"timestamp":"20210129150135","ttl":1209600,"transientcontent":false}}});});</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1759693-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":383});});</script>
+
+</body><!-- Cached 20210129150135 --></html>
